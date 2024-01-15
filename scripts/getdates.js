@@ -5,5 +5,5 @@ var year = new Date().getFullYear();
 var lastModified = document.lastModified;
 
 // Output the year and last modified
-document.getElementById('currentyear').textContent = year + " | Kateryna Glazkova | Siem Reap/New York";
+document.getElementById('currentyear').textContent = year + " | Kateryna Glazkova | Cambodia/USA";
 document.getElementById('lastmodified').textContent = "Last Modified: " + lastModified;
