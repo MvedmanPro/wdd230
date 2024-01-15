@@ -1,0 +1,111 @@
+html {
+    background-color: rgb(238, 222, 222);
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100%;  
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    background: linear-gradient(#f3b68bef, #996744e6);
+}
+img{
+    grid-column: 2/3;
+    justify-self: center;
+    margin-top: 50px;
+}
+h1{
+
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+    grid-column: 2/3;
+    color: rgb(238, 222, 222);
+    text-shadow: 2px 2px 4px black;
+}
+
+h1:hover{
+    color: white;
+}
+nav {
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.menu:hover{
+    border-radius: 10%;
+    background: linear-gradient(#f3b68bef,#996744e6);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-weight: 800;
+    
+
+}
+
+.menu{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    text-decoration: double;
+    color:  black;
+}
+main{
+    padding-top: 3px;
+    padding-bottom: 5px;
+    text-align: center;
+    letter-spacing: 5px;
+    background: linear-gradient(rgb(247, 236, 236), rgba(192, 142, 67, 0.388));
+    margin-bottom: 150px;
+
+}
+ul,li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+}
+.lesson-link{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    text-decoration: double;
+    font-weight: 800;
+    color:  black;
+
+}
+.lesson-link:hover{
+    border-radius: 10%;
+    background: linear-gradient(#f3b68bef,#996744e6);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-weight: 800;
+}
+
+h3{
+    text-decoration: underline;
+}
+.card2{
+    display: grid;
+    background: linear-gradient( rgba(192, 142, 67, 0.388),rgb(247, 236, 236));
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    background: linear-gradient(#996744e6,#f3b68bef);
+    text-align: center;
+}
+
+
+
