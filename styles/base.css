@@ -1,13 +1,8 @@
 html {
     background-color: rgb(238, 222, 222);
-    font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    height: 100%;  
+    font-size: 1.5rem
 }
+
 
 header {
     display: grid;
@@ -16,17 +11,19 @@ header {
     background: linear-gradient(#f3b68bef, #996744e6);
 }
 img{
-    grid-column: 2/3;
+    grid-column: 1/2;
     justify-self: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 h1{
 
     margin-bottom: 50px;
     text-align: center;
+    margin-top: 100px;
     letter-spacing: 3px;
     grid-column: 2/3;
-    color: rgb(238, 222, 222);
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px black;
 }
 
