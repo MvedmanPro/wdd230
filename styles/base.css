@@ -58,10 +58,10 @@ h2 {
     display: block;
     padding: 1rem;
     justify-self: center;
-    text-align: center;
 }
 h3 {
 
+    text-align: center;
     background-color: #ebc8a6;
     border-radius: 10px;
     text-decoration: underline;
