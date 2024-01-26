@@ -21,17 +21,20 @@
         <img src="images/photo_me2.jpg" alt="main photo">
         <h1>Kateryna Glazkova</h1>
     </header>
+    <a id="menu" href="#"></a>
     <nav>
-        <a class="menu" href="#">Home</a>
-        <a class="menu" href="lesson03/chamber-site-plan.html">Site Plan</a>
-        <a class="menu" href="chamber/">Chamber</a>
-        <a class="menu" href="https://www.byui.edu/">BYU-Idaho</a>
-        <a class="menu" href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        </ul>
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
-            <h3>
+            <h3 id="learn">
                 Learning Activities
             </h3>
             <ul>
@@ -77,16 +80,18 @@
             </ul>
         </section>
         <section class="card2">
-            <h3>Information</h3>
+            <h3 id="weather">Information</h3>
             <p>Weather ______ </p>
             <p>Number Of Visits ______</p>
     
         </section>
     </main>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21979.531925392286!2d30.719532834824058!3d46.47956975092716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319bb791299b%3A0x7f89dadb48aba34e!2sCentre%2C%20Odesa%2C%20Odesa%20Oblast%2C%20Ukraine%2C%2065000!5e0!3m2!1sen!2sus!4v1706261649850!5m2!1sen!2sus" width="900" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p id="copyright">&copy; <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
         <p id="lastmodified"> Last Modified:</p>
     </footer>
+    <script src="scripts/hamburger_menu.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 </html>

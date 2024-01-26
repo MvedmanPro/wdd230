@@ -13,7 +13,10 @@ header {
     background: linear-gradient( #6d3727, #ebc8a6, white);
     color: white;
 }
-
+img{
+    width: 60%;
+    height: 60%;
+}
 h1 {
     display: flex;
     justify-content: space-around;
@@ -22,25 +25,66 @@ h1 {
     text-shadow: 2px 2px 4px rgb(11, 8, 8);
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    letter-spacing: 3px;
-    
+h2::before{
+    content: "📒";
 }
-.menu, .lesson-link {
+h3#learn::after{
+    content:"✏️";
+}
+h3#weather::after{
+    content:"⛅";
+}
+
+#menu{
+    display: block;
+    font-size: 2rem;
+	background-color: #eee;
+	color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+#menu::before{
+    content:"☰";
+}
+.navigation{
+    list-style: none;
+    margin: 0 auto;
+    max-width: 640px;
+}
+.navigation li{
+    display: none;
+}
+.navigation a{
+    display: block;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1.5rem;
+    text-decoration: none;
+    transition: 0.9s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+.navigation a:hover, navigation a:active{
+    color: red;
+}
+.show li{
+    display: block;
+}
+
+#menu.show::before{
+    content: "x";
+}
+.lesson-link{
     font-size: larger;
     text-decoration: double;
     color: black;
 }
-
-.menu:hover, .lesson-link:hover, h1:hover {
+.lesson-link:hover,h1:hover {
     color:#6d3727;
     text-shadow: 2px 1px #ebc8a6;
     text-align: center;
     font-weight: 800;
 }
+
 h1:hover {
     text-shadow: 2px 3px white;
 }
@@ -63,10 +107,14 @@ h3 {
     text-align: center;
     background-color: #ebc8a6;
     border-radius: 10px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .card2 {
     font-weight: 800;
+}
+
+#map{
+    width: 100%;
 }
 
 footer {
