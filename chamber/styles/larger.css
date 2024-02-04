@@ -1,0 +1,21 @@
+/* larger.css */
+@media (min-width: 640px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navigation li{
+        display: block;
+    }
+    .navigation a{
+        text-align: center;
+    }
+    #menu{
+        display: none;
+    }
+    .container{
+        display: flex;
+        grid-row: 2/3;
+    }
+}

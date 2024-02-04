@@ -3,28 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kateryna Glazhova">
-    <meta name="description" content="WDD 230 - Web Frontend Development Kateryna Glazkhova Chamber Website">
-    <meta property="og:title" content="Homepage - WDD230 Individual Course Assignment Portal - Kateryna Glazkova">
+    <meta name="author" content="Kateryna Glazkhova">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Kateryna - Chamber Website">
+    <meta property="og:title" content="WDD230 - Odesa Chamber of Commerce Home Page - KG">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.europafm.ro/wp-content/uploads/2023/01/odesa-850x638.jpg">
     <meta property="og:url" content="https://mvedmanpro.github.io/wdd230">
     <link rel="canonical" href="https://mvedmanpro.github.io/wdd230/">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" media="(min-width: 600px)" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="styles/larger.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 240px)" href="styles/medium.css">
     <link rel="icon" href="images/favicon.jpeg" type="image/x-icon">
-    <title>Kateryna Glazkova - WDD 230 - Web Frontend Development</title>
+    <title>KG-WDD230-Odesa Chamber of Commerce Website</title>
 </head>
 <body>
     <header>
-
+        <div class="img-container">
+            <div class="inner-container">
+               <!--<div id="logo">
+                    <img src="images/favicon.jpeg">
+                </div>--> 
+                <a id="menu" href="#"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Discovery</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                </nav>
+                <a class="btn" type="button" href="#">JOIN</a>
+            </div>
+        </div>
     </header>
-    <nav>
-    
-    </nav>
+    <main>
+        <section class="events-weather">
+            <div class="section1">
+                <h2>Events: _____ </h2>
+            </div>
+            <div class="section1">
+                <h2>Weather: ____</h2>
+            </div>
+        </section>
+        <section class="container">
+            <div class="card">
+                <div class="card-image scenario-1"></div>
+                <h2>Title</h2>
+                <p>Text</p>
+            </div>
+            <div class="card">
+                <div class="card-image scenario-2"></div>
+                <h2>Title</h2>
+                <p>Text</p>
+            </div>
+            <div class="card">
+                <div class="card-image scenario-3"></div>
+                <h2>Title</h2>
+                <p>Text</p>
+            </div>
+        </section>
+    </main>
     <footer>
-        
-    </footer> 
+        <p id="copyright">&copy; <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
+        <p id="lastmodified"> Last Modified:</p>
+    </footer>
+<script src="scripts/hamburger_menu.js"></script>
+<script src="scripts/getdates.js"></script>
 </body>
 </html>
