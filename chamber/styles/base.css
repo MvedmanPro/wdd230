@@ -77,7 +77,10 @@ a{
     font-size: 1.3em;
     font-family: "Source Sans Pro", sans-serif;
 }
- 
+h1{
+    text-align: center;
+    color: #145689;
+}
 .btn{
     display: inline-block;
     width: 200px;
