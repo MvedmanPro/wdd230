@@ -1,5 +1,21 @@
-@media only screen and (min-width: 240px){
+@media only screen and (min-width: 828px){
     .inner-container{
         margin-top: 150px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+    .card{
+        grid-column: 1/2;
+    }
+    .card2{
+        grid-column: 2/3;
+    }
+    .card3{
+        grid-row: 2/3;
     }
 }

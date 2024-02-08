@@ -46,19 +46,11 @@ body{
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-#menu{
-    font-size: 2rem;
-	color: #000;
-    font-weight: 700;
-    text-decoration: none;
-}
 #menu::before{
     content:"🟰";
 }
 .navigation{
     list-style: none;
-    margin: 0px auto;
-
 }
 .navigation li{
     display: none;
@@ -70,7 +62,6 @@ body{
     padding: 10px;
     display: block;
     text-align: center;
-    justify-content: center;
     letter-spacing: 3px;
     line-height: 1.5rem;
     border-radius: 5px;
@@ -94,12 +85,20 @@ body{
 #menu.show::before{
     content: "x";
 }
-main{
+/*main{
     display: grid;
     grid-template-columns: 1fr;
 
+}*/
+.event-weather{
+    max-height: fit-content;
 }
-.events-weather{
+.section1,.section2 {
+    display: block;
+    padding: 1rem;
+    justify-self: center;
+}
+/*.events-weather{
     max-width: 600px;
     max-height: 200px;
     grid-gap: 2rem;
@@ -109,14 +108,15 @@ main{
     color: #F6EEE3;
     background-color: #C3B194;
     margin-top: 100px;
-}
-.card{
+}*/
+
+.card, .card2, .card3{
     background-color: #C3B194;
     width: 400px;
     height: 600px;
-    margin: 10px;
-    gap: 2px;
     border-radius: 40px;
+    margin: 50px auto;
+    border: 4px double black;
 }
 .card-image{
     background-color:#F6EEE3;
@@ -139,7 +139,7 @@ footer {
     display: flex;
     justify-content: center;
     grid-gap: 2rem;
-    max-height: 50px;
+    max-height: 80px;
     height: min-content;
     background: linear-gradient(white,#ebc8a6,#6d3727);
     color: black;
