@@ -1,21 +1,50 @@
 /* larger.css */
 @media (min-width: 640px) {
+    .img-container img{
+        width: 100%;
+        height: 50%;
+    }
+    .img-container h1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .navigation {
+        margin-top: -50%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    .navigation li{
+
+    .navigation li {
         display: block;
     }
-    .navigation a{
+
+    .navigation a {
         text-align: center;
     }
-    #menu{
+
+    #menu {
         display: none;
     }
+
+    .img-container .btn {
+        position: relative;
+        margin-top: 20%;
+    }
+    .events-weather{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
     .container{
         display: flex;
-        grid-row: 2/3;
+        justify-content: center;
+        text-align: center;
     }
 }
