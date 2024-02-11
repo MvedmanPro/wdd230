@@ -29,6 +29,12 @@
     #menu {
         display: none;
     }
+    #mode {
+        position: relative;
+        margin-left: 95%;
+        font-size: 3rem;
+        font-size: 2rem;
+    }
 
     .img-container .btn {
         position: relative;

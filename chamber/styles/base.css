@@ -27,7 +27,7 @@ body{
     width: 200px;
     font-weight: bold;
     padding: 10px;
-    background-color: #F6EEE3;
+    background-color:#F6EEE3;
     color: #0C141D;
     border: 5px double #0C141D;
     text-align: center;
@@ -49,6 +49,14 @@ body{
 #menu::before{
     content:"🟰";
 }
+#mode{
+    position: relative;
+    margin-left: 90%;        
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
 .navigation{
     list-style: none;
 }
