@@ -14,14 +14,14 @@
     #menu{
         display: none;
     }
-    img{
+    #me{
         width: 20%;
         height: 20%;
     }
-    #hero{
+   /* #hero{
         width: 100%;
         height: auto;
-    }
+    }*/
     .image-container {
         grid-column: 1 / -1;
       }
