@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img src="images/photo_me2.jpg" alt="main photo">
+        <img src="images/photo_me2.webp" alt="main photo">
         <h1>Kateryna Glazkova</h1>
     </header>
     <a id="menu" href="#"></a>
@@ -32,6 +32,14 @@
         </ul>
     </nav>
     <main>
+     <div class="image-container">
+         <picture>
+         <source media="(max-width: 400px)" srcset="images/img_temple_small.webp">
+         <source media="(max-width: 960px)" srcset="images/img_temple_large.webp">
+         <img id="hero" src="images/img_temple_large.webp" alt="Temple">
+         </picture>
+         <div class="overlay">Salt Lake City Temple</div>
+     </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3 id="learn">
