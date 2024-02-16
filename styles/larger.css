@@ -18,6 +18,10 @@
         width: 20%;
         height: 20%;
     }
+    #hero{
+        width: 100%;
+        height: auto;
+    }
     .image-container {
         grid-column: 1 / -1;
       }
