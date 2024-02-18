@@ -27,7 +27,6 @@ h1 {
     justify-content: space-around;
     font-size: 1rem;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgb(11, 8, 8);
 }
 
 h2::before{

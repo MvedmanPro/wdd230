@@ -23,7 +23,7 @@ body{
     width: 200px;
     font-weight: bold;
     padding: 10px;
-    background-color:#F6EEE3;
+    background-color: #F6EEE3;
     color: #0C141D;
     border: 5px double #0C141D;
     text-align: center;
@@ -111,7 +111,7 @@ body{
 }*/
 
 .card, .card2, .card3{
-    background-color: #C3B194;
+    background-color: #ebc8a6;
     width: 400px;
     height: 600px;
     border-radius: 40px;

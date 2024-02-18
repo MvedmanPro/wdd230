@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" media="(min-width: 240px)" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.jpeg" type="image/x-icon">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
     <title>KG-WDD230-Odesa Chamber of Commerce Website</title>
 </head>
 <body>
@@ -23,7 +23,12 @@
             <div id="mode">
                 🔮
             </div>
-            <img src="images/secondary.webp" alt="Background image">
+            <!--<img src="images/secondary.webp" alt="Background image">-->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/wdd230-orgby600.webp"/>
+                <source media="(max-width: 900px)" srcset="images/wdd230-orgby900.webp"/>
+                <img src="images/wdd230-orgby1200LARGE.webp" alt="Meeting Conference Footage"/>
+            </picture>
             <h1>Odesa Chamber of Commerce</h1>
             <a id="menu" href="#"></a>
             <nav>
@@ -40,12 +45,12 @@
     <main>
         <section class="events-weather">
             <div class="section1">
-                <h2>Events: _____ </h2>
+                <h2>Events: <span id="events"></span></h2>
             </div>
             <div class="section2">
-                <h2>Weather: ____</h2>
+                <h2>Weather: Temperature: <span id="temperature">35</span>°F, Wind Speed: <span id="windSpeed">7</span>mph, Wind Chill: <span id="windChill"></span></h2>
             </div>
-        </section>
+        </section>   
         <section class="container">
             <div class="card">
                 <div class="card-image">
@@ -78,5 +83,6 @@
 <script src="scripts/hamburger_menu.js"></script>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/darkmode.js"></script>
+<script src= "scripts/windchill.js"></script>
 </body>
 </html>

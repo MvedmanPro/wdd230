@@ -42,7 +42,8 @@
     }
     .events-weather{
         margin-top: 22%;
-        background-color: #C3B194;
+        background-color: #ebc8a6;
+        /*#C3B194;*/
     }
     .section1, .section2, .events-weather {
         position: relative;
