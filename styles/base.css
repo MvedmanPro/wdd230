@@ -109,7 +109,6 @@ h1:hover {
     height: 100%;
     text-align: center;
     line-height: 50px;
-    overflow-wrap: nowrap;
     color: white;
 } 
 main {
