@@ -49,7 +49,7 @@
     .main-content {
         grid-template-columns: 1fr 1fr;
         max-width: 400px;
-        margin-left: 20%;
+        margin-left: 25%;
     }
     .main-content img:hover{
         box-shadow: 0 0 50px #555454;
