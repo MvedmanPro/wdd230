@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kateryna Glazkhova">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Kateryna - Chamber Website">
+    <meta property="og:title" content="WDD230 - Odesa Chamber of Commerce Home Page - KG">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.europafm.ro/wp-content/uploads/2023/01/odesa-850x638.jpg">
+    <meta property="og:url" content="https://mvedmanpro.github.io/wdd230">
+    <link rel="canonical" href="https://mvedmanpro.github.io/wdd230/">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 240px)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+    <title>KG-WDD230-Odesa Chamber of Commerce Website</title>
+</head>
+<body>
+    <header>
+        <div class="img-container">
+            <div id="mode">
+                <p>🔮</p>
+            </div>
+            <h1>Odesa Chamber of Commerce</h1>
+            <a id="menu" href="#"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discovery</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+            <picture>
+                <source media="(max-width: 600px)" srcset="hero-img.webp">
+                <source media="(max-width: 900px)" srcset="hero-img.webp">
+                <img src="images/hero-img.webp" alt="Background img">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="sidebar">
+                <h3>About Odesa</h3>
+                <p>Odesa is a vibrant city known for...</p>
+            
+                <h3>Attractions</h3>
+                <ul>
+                    <li>Attraction 1</li>
+                    <li>Attraction 2</li>
+    
+                </ul>
+                <h3>Upcoming Events</h3>
+                <ul>
+                   <li>Event 1 on Date 1</li>
+                   <li>Event 2 on Date 2</li>
+                </ul>
+                <p id="visitMessage"></p>
+            </div>
+        </div>
+        <div class="main-content">
+            <figure><img loading="lazy" src="images/architect400.webp" alt="Odesa Architecture">
+                <figcaption>A glimpse into the architectural beauty of Odesa.</figcaption></figure>
+            <figure><img loading="lazy" src="images/industry_400.webp" alt="Odesa Industrial City/Port">
+                <figcaption>The bustling industrial life of Odesa's city port.</figcaption></figure>
+            <figure><img loading="lazy" src="images/odesa_high2_400.webp" alt="Odesa Bird-view">
+                <figcaption>A bird's eye view of the charming city of Odesa.</figcaption></figure>
+            <figure><img loading="lazy" src="images/rest400.webp" alt="Odesa Entertainment">
+                <figcaption>The vibrant entertainment scene in Odesa.</figcaption></figure>
+            <figure><img loading="lazy" src="images/operatheater400.webp" alt="Odesa Cultural City/Opera Theater">
+                <figcaption>The iconic Opera Theater, a symbol of Odesa's rich cultural heritage.</figcaption></figure>
+            <figure><img loading="lazy" src="images/odesa_high_400.webp" alt="Odesa from Birds-view2">
+                <figcaption>Another breathtaking aerial view of Odesa.</figcaption></figure>
+            <figure><img loading="lazy" src="images/sea400.webp" alt="Odesa Black Sea">
+                <figcaption>The serene Black Sea, a natural treasure of Odesa.</figcaption></figure>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright">© <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
+        <p id="lastmodified"> Last Modified:</p>
+        <p>WDD 230 - Odesa Chamber of Commerce Website</p>
+    </footer>
+<script src="scripts/hamburger_menu.js"></script>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/darkmode.js"></script>
+<script src= "scripts/windchill.js"></script>
+<script src="scripts/localStorage.js"></script>
+</body>
+</html>
