@@ -15,6 +15,14 @@ function confirmPass() {
         message.innerHTML = ""; 
     }
 }
+const ratingDisplay = document.querySelector("#ratingDisplay")
+const ratingRange = document.querySelector("#range")
 
+ratingRange.addEventListener("change", displayValue)
+ratingRange.addEventListener("input", displayValue)
+
+function displayValue() {
+    ratingDisplay.innerHTML = ratingRange.value
+}
 
 
