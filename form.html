@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img id="me" src="images/photo_me2.webp" alt="main photo">
+        <h1>Kateryna Glazkova</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="username">Username*<input type="text" name="username" required></label>
+                <label for="password">Password*<input type="password" id="pwd" name="pwd" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Eight or more characters" required></label>
+                <div id="divMessage"></div>
+                <label for="password">Confirm Password*<input type="password" id="pwd2" name="confirm-pwd" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Eight or more characters" required></label>
+                <label for="email">Email*<input type="email" name="email" id="email" placeholder="Your byui email address" title="A valid byui.edu email address" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Page Rating</legend>
+                <label for="range" id="range">Page Rating</label>
+                <div id="ratingDisplay">Max-10</div>
+                <input type="range" id="range" name="range" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+            <label id="submitLabel"><input type="submit" id="submitBtn" name="submitBtn" value="Create Account"></label>
+        </form>
+    </main>
+
+    <footer>
+        <p id="copyright">&copy; <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
+        <p id="lastmodified"> Last Modified:</p>
+    </footer>
+    <script src="scripts/formvalidate.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger_menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+.wf1 fieldset{
+	margin: 2rem 0;
+	border: 1px solid hsl(240, 54%, 54%);
+	border-radius: 6px;
+	padding: .5rem 2%;
+	width: 100%;
+	max-width: 400px;
+}
+.wf1 legend{
+	color: black;
+	padding: 0 .5rem;
+}
+
+.wf1 label{
+	display: block;
+	padding-top: 1rem;
+	font-weight: 550;
+	font-size: .9rem;
+}
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="password"]{
+	background-color:#eee;
+	display: block;
+	border: solid 1px grey;
+	border-radius: 6px;
+	padding: .75rem;
+	color: grey;
+	width: 100%;
+	max-width: 300px;
+	appearance: none;
+}
+
+#range {
+	width: 185px;
+	margin-bottom: 0;
+}
+#rangevalue {
+	font-size: 2rem;
+	color: black;
+}
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 1px;
+	width: 200px;
+}
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+.wf1 input[type="submit"]{
+	border: none;
+	background-image: linear-gradient(#9c2c13, #6f200e);
+	color: white;
+	border-radius: 6px;
+	padding: .8rem;
+	width: 96%;
+	max-width: 400px;
+	margin: -1rem 2% 2rem 2%;
+	box-shadow: 1px 1px 4px #999;
+	cursor: pointer;
+}
+
+.wf1 input[type="text"]:required,
+.wf1 input[type="email"]:required,
+.wf1 input[type="password"]:required{
+	border-right: solid 8px red;
+}
+.wf1 input[type="text"]:valid,
+.wf1 input[type="email"]:valid,
+.wf1 input[type="password"]:valid{
+	border-right: solid 8px green;
+}
