@@ -1,5 +1,5 @@
 const passLabel = document.querySelector("#pwd");
-const pwd = document.querySelector("#password");
+const pwd = document.querySelector("#pwd");
 const pwd2 = document.querySelector("#pwd2");
 const message = document.querySelector("#divMessage");
 
@@ -16,7 +16,7 @@ function confirmPass() {
     }
 }
 const ratingDisplay = document.querySelector("#ratingDisplay")
-const ratingRange = document.querySelector("#range")
+const ratingRange = document.querySelector("#rating")
 
 ratingRange.addEventListener("change", displayValue)
 ratingRange.addEventListener("input", displayValue)
