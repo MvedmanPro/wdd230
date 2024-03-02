@@ -1,6 +1,6 @@
-const passLabel = document.querySelector("#pwd");
-const pwd = document.querySelector("#pwd");
-const pwd2 = document.querySelector("#pwd2");
+const passLabel = document.querySelector("#password");
+const pwd = document.querySelector("#password");
+const pwd2 = document.querySelector("#password2");
 const message = document.querySelector("#divMessage");
 
 pwd2.addEventListener("focusout", confirmPass);
@@ -16,7 +16,7 @@ function confirmPass() {
     }
 }
 const ratingDisplay = document.querySelector("#ratingDisplay")
-const ratingRange = document.querySelector("#rating")
+const ratingRange = document.querySelector("#range")
 
 ratingRange.addEventListener("change", displayValue)
 ratingRange.addEventListener("input", displayValue)
