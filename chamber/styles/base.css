@@ -245,7 +245,7 @@ label{
 .web-form input[type="text"],
 .web-form input[type="email"],
 .web-form input[type="password"],
-.web-form input[type="telephone"],
+.web-form input[type="tel"],
 .web-form textarea,
 .web-form #membership {
 	background-color:#eee;
