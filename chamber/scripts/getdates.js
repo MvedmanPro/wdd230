@@ -10,5 +10,5 @@ document.getElementById('lastmodified').textContent = `Last Modified: ${lastModi
 
 
 const currentTimestamp = Date.now();
-document.getElementById("hidden").value = currentTimestamp;
+document.getElementById("myHiddenField").value = currentTimestamp;
 console.log("Current timestamp:", currentTimestamp);
