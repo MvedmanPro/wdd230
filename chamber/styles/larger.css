@@ -58,4 +58,14 @@
     #mode{
         top: 5%;      
     }
+    .main-cont{
+        display: grid;
+        column-gap: 10px;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+    .membLevel{
+        grid-column: 3/4;
+        margin-right: 10%;
+    }
 }

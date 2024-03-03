@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kateryna Glazkhova">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Kateryna - Chamber Website">
+    <meta property="og:title" content="WDD230 - Odesa Chamber of Commerce Home Page - KG">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.europafm.ro/wp-content/uploads/2023/01/odesa-850x638.jpg">
+    <meta property="og:url" content="https://mvedmanpro.github.io/wdd230">
+    <link rel="canonical" href="https://mvedmanpro.github.io/wdd230/">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 240px)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+    <title>KG-WDD230-Odesa Chamber of Commerce Website</title>
+</head>
+<body>
+    <header>
+        <div class="img-container">
+            <div id="mode">
+                <p>🔮</p>
+            </div>
+            <h1>Odesa Chamber of Commerce</h1>
+            <a id="menu" href="#"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discovery</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="#">JOIN</a>
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-img.webp">
+                <source media="(max-width: 900px)" srcset="images/hero-img.webp">
+                <img src="images/hero-img.webp" alt="Background img">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <div class="main-cont">
+        <div class="grid-form">
+          <form method="get" action="thankyou.html" class="web-form">
+            <label for="fname">First Name*
+            <input type="text" id="fname" name="fname" required></label>
+            <label for="lname">Last name* <input type="text" id="lname" name="lname" required></label>
+            <label for="position">Applicant's Position/Title* <input type="text" id="position" name="position" pattern="[A-Za-z/- ]{7,}" required ></label>
+            <label for="email">Email*<input type="email" id="email" name="email" placeholder="example: 123contact@gmail.com" required></label>
+            <label for="phone">Phone Number(optional)<input type="telephone" id="phone" name="phone"></label>
+            <label for="organization">Business/Organization*<input type="text" id="organization" name="organization" required></label>
+            <label for="membership">Choose desired membership:</label>
+            <select id="membership" name="membership">
+                <option value="Gold Membership">Gold Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="NP Membership">NP Membership</option>
+            </select>
+            <label for="description">Description of buisness/organization<textarea id="description" name="description"></textarea></label>
+            <label for="hidden"><input type="hidden" id="hidden" name="hidden"></label>
+            <label for="button"><input type="submit" id="button" name="button" value="Join Us"></label>
+          </form>
+        </div>
+        <div class="membLevel">
+            <div id="np">
+                <h2>NP Membership</h2>
+                <ul>
+                    <li>
+                        Cost: $0/year
+                    </li>
+                    <li>
+                        All Basic Membership benefits
+                    </li>
+                    <li>
+                        Priority registration for workshops and seminars
+                    </li>
+                    <li>
+                        Featured listing in our online directory
+                    </li>
+                </ul>
+            </div>
+            <div id="bronze">
+                <h2>Bronze Membership</h2>
+                <ul>
+                    <li>
+                        Cost: $75/year
+                    </li>
+                    <li>
+                        All Silver Membership benefits
+                    </li>
+                    <li>
+                        Exclusive invitation to annual gala
+                    </li>
+                    <li>
+                        20% discount on event tickets
+                    </li>
+                </ul>
+            </div>
+            <div id="silver">
+                <h2>Silver Membership</h2>
+                <ul>
+                    <li>
+                        Cost: $150/year
+                    </li>
+                    <li>
+                        All Bronze Membership benefits
+                    </li>
+                    <li>
+                        Personalized training session with industry experts
+                    </li>
+                    <li>
+                        25% discount on event tickets
+                    </li>
+                </ul>
+            </div>
+            <div id="gold">
+                <h2>Gold Membership</h2>
+                <ul>
+                    <li>
+                        Cost: $250/year
+                    </li>
+                    <li>
+                        All Silver Membership benefits
+                    </li>
+                    <li>
+                        24/7 Communication with the team of experts
+                    </li>
+                    <li>
+                        Logo placement on our website
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p id="copyright">© <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
+        <p id="lastmodified"> Last Modified:</p>
+        <p>WDD 230 - Odesa Chamber of Commerce Website</p>
+    </footer>
+<script src="scripts/hamburger_menu.js"></script>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/darkmode.js"></script>
+</body>
+</html>

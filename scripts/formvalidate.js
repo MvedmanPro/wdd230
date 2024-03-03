@@ -15,14 +15,13 @@ function confirmPass() {
         message.innerHTML = ""; 
     }
 }
-const ratingDisplay = document.querySelector("#ratingDisplay")
-const ratingRange = document.querySelector("#range")
+const ratingDisplay = document.querySelector("#ratingDisplay");
+const ratingRange = document.querySelector("#range");
 
-ratingRange.addEventListener("change", displayValue)
-ratingRange.addEventListener("input", displayValue)
+ratingRange.addEventListener("input", displayValue);
 
 function displayValue() {
-    ratingDisplay.innerHTML = ratingRange.value
+    ratingDisplay.innerHTML = ratingRange.value;
 }
 
 

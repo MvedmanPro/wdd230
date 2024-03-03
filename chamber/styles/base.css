@@ -219,3 +219,77 @@ body.dark-mode .sidebar{
     color: #fff;
     background-color: #000;
 }
+.grid-form{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.main-cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+label{
+    display: block;
+    padding: .5rem;
+    margin: 0 20%;
+    justify-content: center;
+}
+.web-form{
+    grid-column: 2/3;
+}
+
+.web-form input[type="text"],
+.web-form input[type="email"],
+.web-form input[type="password"],
+.web-form input[type="telephone"],
+.web-form textarea,
+.web-form #membership {
+	background-color:#eee;
+	display: block;
+	border: solid 1px grey;
+	border-radius: 6px;
+	padding: .75rem;
+	color: grey;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+}
+
+.web-form #membership{
+    margin-left: 21%;
+}
+
+.web-form input[type="submit"]{
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(grey,#56A094);
+    max-width: 500px;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+.membLevel{
+    margin: 0 0 20px 0;
+    border: 1px solid;
+    padding: 10px;
+    border-color: grey;
+    box-shadow: 5px 5px 5px #f1f1f1;
+}
+#np, #bronze, #silver, #gold{
+    background-color: #F6EEE3;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 2px 5px 7px #161414;
+}
+#np h2, #bronze h2, #silver h2, #gold h2{
+    color: white;
+    background-color: #56A094;
+    text-align: center;
+    padding: 2px;
+    border-radius: 2px;
+    box-shadow: 7px 10px 7px #161414;
+}
