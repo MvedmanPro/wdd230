@@ -1,0 +1,40 @@
+{
+    "wardInfo": {
+        "familyName": "Lans",
+        "moveinDate": "04/04/2004",
+        "numberOfPpl": 6,
+        "visitedbyBishopric": true,
+        "familyMembers": [ 
+        {
+            "name": "Miranda Lans",
+            "gender": "Female",
+            "birthDate": "05/06/1970"
+        },
+        {
+            "name": "Mike Lans",
+            "gender": "male",
+            "birthDate": "03/02/1969"
+        },
+        {
+            "name": "Michelle Lans",
+            "gender": "Female",
+            "birthDate": "01/02/1988"
+        },
+        {
+            "name": "Mia Lans",
+            "gender": "Female",
+            "birthDate": "07/02/1989"
+        },
+        {
+            "name": "Emily Lans",
+            "gender": "Female",
+            "birthDate": "08/03/1991"
+        },
+        {
+            "name": "Jake Lans",
+            "gender": "Male",
+            "birthDate": "08/03/1994"
+        }
+    ]
+}
+}
