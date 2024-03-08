@@ -1,11 +1,112 @@
 {
-    "lessons":[
+    "lessons": [
         {
             "lesson": "01",
             "links": [
                 {
-                "url": "lesson01/holygrail.html",
-                "title": "Lesson 01"
+                    "url": "lesson01/holygrail.html",
+                    "title": ""
+                }
+            ]
+
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                },
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design Principles Exercise"
+                },
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Query Exercise"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/W3Schools_Combinators.jpg",
+                    "title": "Combinator Exercise"
+                },
+                {
+                    "url": "https://codepen.io/MvedmanPro/pen/RwdjoRV",
+                    "title": "Pseudo Elements Codepen"
+                },
+                {
+                    "url": "https://codepen.io/MvedmanPro/pen/PoLJmYE",
+                    "title": "Responsive Menu Codepen"
+                }
+            ]
+        },
+
+        { 
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/MvedmanPro/pen/MWxVNxJ",
+                    "title": "Pseudo Classes Codepen"
+                }
+
+            ]
+            
+        },
+
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "BOM Assignment"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "images/landscape.webp",
+                    "title": "Resizing Image(practice) landscape.webp"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Load Example"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Exercise"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON Exercise"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "JSON Prophets Exercise"
                 }
             ]
         }
