@@ -126,6 +126,9 @@ h2 {
     padding: 1rem;
     justify-self: center;
 }
+ul{
+    list-style: none;
+}
 h3 {
     text-align: center;
     background-color: #ebc8a6;
