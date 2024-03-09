@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: rgb(46 112 173);
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background-color: lightgrey;
+    box-shadow: 0 0 2em #777;
+}
+
+#cards section {
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid rgb(167, 166, 166);
+    text-align: center;
+    justify-self: center;
+}
+
+h2 {
+    color: rgb(46 112 173);
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;;
+}
+
+#cards section img {
+    margin-top: .5rem;
+    box-shadow: 5px 5px 2em #807b7b;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(46 112 173);
+    font-family: "Work Sans", sans-serif;
+    font-size: large;
+    text-align: center;
+}
