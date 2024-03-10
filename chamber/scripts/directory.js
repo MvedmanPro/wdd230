@@ -1,38 +1,39 @@
-const url = "";
+const baseURL = "https://mvedmanpro.github.io/wdd230/";
+const url = "https://mvedmanpro.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector("#cards");
 
-async function getProphetsData() {
+async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets); // temporary testing of data retreival
-    displayProphets(data.prophets)
+    displayMembers(data.members)
   }
   
-  getProphetsData();
+  getMembersData();
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
-        let card = document.createElement("section");
-        let fullName = document.createElement("h2");
-        let birthdate = document.createElement("p")
-        let birthplace = document.createElement("p")
-        let portrait = document.createElement("img");
+const displayMembers = (members) => {
+    members.forEach((member) => {
+        member.company.forEach((object) => {
+            let card = document.createElement("section");
+            let name = document.createElement("h2");
+            let address = document.createElement("p");
+            let phone = document.createElement("p");
+            let imgUrl = document.createElement("img");
 
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        birthdate.textContent = `Birth: ${prophet.birthdate}`;
-        birthplace.textContent = `Birth Place: ${prophet.birthplace}`;
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", "347");
-        portrait.setAttribute("height", "447");
-
-        card.appendChild(fullName);
-        card.appendChild(birthdate);
-        card.appendChild(birthplace);
-        card.appendChild(portrait);
-        cards.appendChild(card);
-
-
+            name.textContent = `${object.name}`;
+            address.textContent = `Address: ${object.address}`;
+            phone.textContent = `Phone Number: ${object.phone}`;
+            imgUrl.setAttribute("src", object.imgUrl);
+            imgUrl.setAttribute("alt", `Image of ${object.name} company in Odesa, Ukraine`);
+            imgUrl.setAttribute("loading", "lazy");
+            imgUrl.setAttribute("width", "400");
+            imgUrl.setAttribute("height", "250");
+            
+            card.appendChild(name);
+            card.appendChild(address);
+            card.appendChild(phone);
+            card.appendChild(imgUrl);
+            cards.appendChild(card);
+        });
     });
 }
