@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kateryna Glazkhova">
-    <meta name="description" content="WDD 230 - Web Frontend Development - Kateryna - Chamber Website">
-    <meta property="og:title" content="WDD230 - Odesa Chamber of Commerce Home Page - KG">
+    <meta name="description" content="WDD 230 - Kateryna - Directory Page - List of Our Members">
+    <meta property="og:title" content="WDD230 - Odesa Chamber of Commerce Directory Page - KG">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.europafm.ro/wp-content/uploads/2023/01/odesa-850x638.jpg">
     <meta property="og:url" content="https://mvedmanpro.github.io/wdd230">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" media="(min-width: 240px)" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="styles/larger.css">
     <link rel="icon" href="images/favicon.webp" type="image/x-icon">
-    <title>KG-WDD230-Odesa Chamber of Commerce Website</title>
+    <title>KG-WDD230-Odesa Chamber of Commerce Directory Page</title>
 </head>
 <body>
     <header>
@@ -41,38 +41,11 @@
             </picture>
         </div>
     </header>
-    <main>
-        <section class="events-weather">
-            <div class="section1">
-                <h2>Events: <span id="events"></span></h2>
-            </div>
-            <div class="section2">
-                <h2>Weather: Temperature: <span id="temperature">35</span>°F, Wind Speed: <span id="windSpeed">7</span>mph, Wind Chill: <span id="windChill"></span></h2>
-            </div>
-        </section>   
-        <section class="container">
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/people360.webp" alt="Event image">
-                </div>
-                <h2>Title</h2>
-                <p>Text</p>
-            </div>
-            <div class="card2">
-                <div class="card-image">
-                    <img src="images/commerce.webp" alt="Image">
-                </div>
-                <h2>Title</h2>
-                <p>Text</p>
-            </div>
-            <div class="card3">
-                <div class="card-image">
-                    <img src="images/start360.webp" alt="Members image">
-                </div>
-                <h2>Title</h2>
-                <p>Text</p>
-            </div>
-        </section>
+    <main class="directory">
+        <h2>Business Directory</h2>
+        <div class="members">
+
+        </div>
     </main>
     <footer>
         <p id="copyright">© <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
@@ -82,5 +55,6 @@
 <script src="scripts/hamburger_menu.js"></script>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/darkmode.js"></script>
+<script src="scripts/directory.js" ></script>
 </body>
 </html>
