@@ -18,11 +18,15 @@ const displayMembers = (members) => {
             let name = document.createElement("h2");
             let address = document.createElement("p");
             let phone = document.createElement("p");
+            let website = document.createElement("a");
             let imgUrl = document.createElement("img");
 
-            name.textContent = `${object.name}`;
+            name.textContent = `Company: ${object.name}`;
             address.textContent = `Address: ${object.address}`;
             phone.textContent = `Phone Number: ${object.phone}`;
+            website.textContent = `Click to Visit Website`;
+
+            website.setAttribute("href", object.website)
             imgUrl.setAttribute("src", object.imgUrl);
             imgUrl.setAttribute("alt", `Image of ${object.name} company in Odesa, Ukraine`);
             imgUrl.setAttribute("loading", "lazy");
@@ -32,6 +36,7 @@ const displayMembers = (members) => {
             card.appendChild(name);
             card.appendChild(address);
             card.appendChild(phone);
+            card.appendChild(website);
             card.appendChild(imgUrl);
             cards.appendChild(card);
         });

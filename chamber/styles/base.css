@@ -293,6 +293,56 @@ label{
     text-align: center;
     padding: 2px;
     border-radius: 2px;
-    box-shadow: 7px 10px 7px #161414;
+    box-shadow: 7px 10px 7px rgb(69, 67, 67);
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 1em rgb(69, 67, 67);
+    background-color: #F6EEE3;
+    
 }
 
+#cards section{
+    background-color: #ebc8a6;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid rgb(227, 214, 214);
+    box-shadow: 0 0 5em rgb(250, 248, 248);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#cards img{
+    margin-top: 25px;
+    border:2px solid rgb(69, 67, 67);
+    border-radius: 10px;
+
+}
+
+#cards a{
+    color: white;
+    background-color: #6d3727;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.directory {
+    background-color: #ebc8a6;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    color: rgb(69, 67, 67);
+}
+#cards h2{
+    background-color: white;
+    box-shadow: 0 0 1em rgb(69, 67, 67);
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    color: rgb(69, 67, 67);
+}
