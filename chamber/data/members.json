@@ -24,7 +24,7 @@
                         "phone": "+38(098)215-89-91",
                         "website": "https://www.b52.ua/",
                         "imgUrl":"https://www.b52.ua/img/collage.png",
-                        "membership": "platinum"
+                        "membership": "NP"
     
                     }
                 ]
@@ -40,7 +40,7 @@
                         "phone": "+38(073)600-09-91",
                         "website": "https://www.tripadvisor.com/Restaurant_Review-g295368-d12997825-Reviews-Foundation_Coffee_Roasters-Odesa_Odesa_Oblast.html",
                         "imgUrl":"https://media-cdn.tripadvisor.com/media/photo-s/17/0e/46/69/caption.jpg",
-                        "membership": "platinum"
+                        "membership": "Bronze"
                     }
                 ]
 
@@ -55,7 +55,7 @@
                         "phone": "+38(096)775-30-50",
                         "website": "https://www.facebook.com/shtrudelcafe/",
                         "imgUrl":"https://media-cdn.tripadvisor.com/media/photo-s/12/9d/b5/74/getlstd-property-photo.jpg",
-                        "membership": "platinum"
+                        "membership": "Bronze"
                     }
                 ]
 
@@ -70,7 +70,7 @@
                         "phone": " +38(048)705-55-52",
                         "website": "https://www.lagiocondahotel.com/",
                         "imgUrl":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/f3/7b/b7/caption.jpg?w=1200&h=-1&s=1",
-                        "membership": "platinum"
+                        "membership": "Silver"
                     }
                 ]
 
@@ -80,12 +80,12 @@
                 "company": 
                 [ 
                     { 
-                    "name": "La Gioconda Boutique Hotel",
+                    "name": "Bristol Hotel",
                     "address": "15 Pushkinska St, Odesa Ukraine 65026",
                     "phone": "+38(048)705-55-52",
                     "website": "https://bristol-hotel.com.ua/en/",
                     "imgUrl":"https://bristol-hotel.com.ua/assets/uploads/2019/09/torzh_sobytiya_2-min.jpg",
-                    "membership": "platinum"
+                    "membership": "Gold"
                     }
                 ] 
 
@@ -99,7 +99,8 @@
                     "address": "25 Lanzheron Beach, Odesa Ukraine",
                     "phone": "+38(048)720-70-70",
                     "website": "http://www.nemo.od.ua/",
-                    "membership": "platinum"
+                    "imgUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/4d/d8/df/imag5578-largejpg.jpg?w=1200&h=-1&s=1",
+                    "membership": "Gold"
                     }
                 ]
             }
