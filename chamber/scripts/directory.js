@@ -1,12 +1,33 @@
-const baseURL = "https://mvedmanpro.github.io/wdd230/";
+
+/*Buttons don't work for some reason*/
+
+document.addEventListener("DOMContentLoaded", () => {
+    const gridbutton = document.querySelector("#grid");
+    const listbutton = document.querySelector("#list");
+    const display = document.querySelector("#mainDiv");
+
+    gridbutton.addEventListener("click", () => {
+        display.classList.add("grid");
+        display.classList.remove("list");
+    });
+
+    listbutton.addEventListener("click", showList);
+
+    function showList() {
+        display.classList.add("list");
+        display.classList.remove("grid");
+    }
+
+
+
+const baseURL = "https://mvedmanpro.github.io/wdd230/chamber";
 const url = "https://mvedmanpro.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector("#cards");
+const cards = document.querySelector(".cards");
 
 async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
-    // console.table(data.prophets); // temporary testing of data retreival
-    displayMembers(data.members)
+    displayMembers(data.members);
   }
   
   getMembersData();
@@ -41,4 +62,5 @@ const displayMembers = (members) => {
             cards.appendChild(card);
         });
     });
-}
+};
+});

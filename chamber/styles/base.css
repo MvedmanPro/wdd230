@@ -295,7 +295,7 @@ label{
     border-radius: 2px;
     box-shadow: 7px 10px 7px rgb(69, 67, 67);
 }
-#cards {
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 1rem;
@@ -305,7 +305,7 @@ label{
     
 }
 
-#cards section{
+.cards section{
     background-color: #ebc8a6;
     color: black;
     border-radius: 5px;
@@ -315,21 +315,21 @@ label{
     margin-top: 20px;
 }
 
-#cards img{
+.cards img{
     margin-top: 25px;
     border:2px solid rgb(69, 67, 67);
     border-radius: 10px;
 
 }
 
-#cards a{
+/*.cards a{
     color: white;
     background-color: #6d3727;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
     margin-left: 25%;
-}
+}*/
 
 .directory {
     background-color: #ebc8a6;
@@ -338,11 +338,77 @@ label{
     border-radius: 7px;
     color: rgb(69, 67, 67);
 }
-#cards h2{
+.cards h2{
     background-color: white;
     box-shadow: 0 0 1em rgb(69, 67, 67);
     text-align: center;
     padding: 10px;
     border-radius: 7px;
     color: rgb(69, 67, 67);
+}
+
+/*For the directory Grid/List views*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1rem;
+    padding: 3rem;
+    box-shadow: 0 0 1em rgb(69, 67, 67);
+    background-color: #F6EEE3;
+}
+#grid, #list{
+    background-color: #f7f9fb;
+    padding: 10px;
+    gap: 20px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.grid section {
+	margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid section img {
+    margin-top: 25px;
+    border:2px solid rgb(69, 67, 67);
+    border-radius: 10px;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+    border: 2px solid black;
+	margin-top: 0;
+    margin-bottom: 0;
+	padding: 0.25rem;
+}
+
+.list p  {
+	font-size:large;
+    margin: 0;
+    
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 2rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #e8cac3;
 }
