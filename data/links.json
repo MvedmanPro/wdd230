@@ -109,6 +109,25 @@
                     "title": "JSON Prophets Exercise"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/weather.html",
+                    "title": "Weather Exercise"
+                }
+            ]
+        },
+        {
+            "lesson": "11",
+            "links": [
+                {
+                    "url": "",
+                    "title": "Exercise 11"
+                }
+            ]
+
         }
     ]
 }
