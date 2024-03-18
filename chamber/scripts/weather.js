@@ -4,7 +4,6 @@ const captionDesc = document.querySelector("figcaption");
 const wSpeed = document.querySelector("#windSpeed")
 
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=46.48&lon=30.74&appid=b409ee506ffe2f7f43e8a343d4018ab0&units=metric"
-//const url2 = "api.openweathermap.org/data/2.5/forecast?lat=49.75&lon=6.66&appid=b409ee506ffe2f7f43e8a343d4018ab0&units=metric"
 
 async function apiFetch() {
     try {
@@ -44,17 +43,22 @@ function titleCase(desc) {
     })
 }
 
-function windChill(currentTemp, wSpeed){
-    const chill = document.querySelector("#windChill")
-    if (currentTemp <= 50 && wSpeed > 3) {
-        let calcWindChill = 35.74 + 0.6215 * currentTemp - 35.75 * Math.pow(wSpeed, 0.16) + 0.4275 * Math.pow(wSpeed, 0.16);
-        return chill.innerHTML = `${calcWindChill.toFixed(0)}&deg;C`
-    }
-    else {
-        document.getElementById("windPara").textContent = ""
-        return chill.textContent = " and no wind chill at the moment."
+function windChill(temperature, windSpeed) {
+    const chill = document.querySelector("#windChill");
+    if (temperature <= 50 && windSpeed > 3) {
+        // Convert wind speed to km/h (from m/s)
+        const windKmH = windSpeed * 3.6;
+
+        // Calculate wind chill in Celsius
+        const calcWindChill = 13.12 + 0.6215 * temp - 11.37 * Math.pow(windKmH, 0.16) + 0.3965 * Math.pow(windKmH, 0.16);
+
+        return chill.innerHTML = `${calcWindChill.toFixed(0)}°C`;
+    } else {
+        document.getElementById("windP").textContent = "";
+        return chill.textContent = " and no wind chill at the moment.";
     }
 }
+
 
 async function forecastData() {
     const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=49.75&lon=6.66&appid=b409ee506ffe2f7f43e8a343d4018ab0&units=metric"
@@ -75,8 +79,8 @@ forecastData()
 
 function displayForecast(data) {
     // day 1
-    const day1Date = document.getElementById("day1Date")
-    const day1Temp = document.getElementById("day1Temp")
+    const day1Date = document.getElementById("day1D")
+    const day1Temp = document.getElementById("day1T")
     const day1Desc = document.getElementById("day1Desc")
     
     const day1 = data.list[0].dt * 1000
@@ -92,8 +96,8 @@ function displayForecast(data) {
     day1Desc.textContent = capDesc
 
     // day 2
-    const day2Date = document.getElementById("day2Date")
-    const day2Temp = document.getElementById("day2Temp")
+    const day2Date = document.getElementById("day2D")
+    const day2Temp = document.getElementById("day2T")
     const day2Desc = document.getElementById("day2Desc")
 
     const dtSec2 = data.list[8].dt
@@ -109,8 +113,8 @@ function displayForecast(data) {
     day2Desc.textContent = capDesc2
 
     // day 3
-    const day3Date = document.getElementById("day3Date")
-    const day3Temp = document.getElementById("day3Temp")
+    const day3Date = document.getElementById("day3D")
+    const day3Temp = document.getElementById("day3T")
     const day3Desc = document.getElementById("day3Desc")
     
     const dtSec3 = data.list[16].dt

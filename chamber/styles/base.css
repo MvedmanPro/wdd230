@@ -51,9 +51,9 @@ body{
 }
 #mode{
     position: absolute;
-    top: 15%;
+    top: 20%;
     padding: 3px;
-    left: 75%;
+    margin-left: 75%;
     transform: translate(-50%, -50%);
     cursor: pointer;
 }
@@ -107,14 +107,12 @@ body{
     margin-top: 40px;
 }
 ul li {
-    list-style: none;
+    list-style: disc;
     color: black;
-    text-align: left;
 }
 .section1 h2, .section2 h2{
     background-color:#56A094;
     border: 2px dotted rgb(246, 244, 244);
-    padding: px;
     color: white;
     text-align: center;
 
@@ -133,11 +131,12 @@ ul li {
 
 .card, .card2, .card3{
     background-color:#F6EEE3;
-    width: 425px;
+    max-width: 400px;
+    padding: 5px;
     height: 650px;
-    border-radius: 40px;
-    margin: 50px auto;
-    border: 2px double rgb(93, 91, 91);
+    border-radius: 20px;
+    margin: 30px auto;
+    border: 2px double #56A094;
 }
 .card-image{
     align-items: center;

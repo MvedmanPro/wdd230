@@ -1,5 +1,5 @@
 /* larger.css */
-@media (min-width: 940px) {
+@media (min-width: 928px) {
     .img-container{
         margin-top: -1%;
     }
@@ -8,8 +8,8 @@
         margin-left: 20px;
     }
     .navigation {
-        margin-left: 20%;
-        width: 50%;
+        margin-left: 25%;
+        width: 48%;
         top: 2%;
         display: flex;
         flex-direction: row;
@@ -18,9 +18,9 @@
 
     #mode{
         position: absolute;
-        top: 15%;
+        top: 10%;
         padding: 3px;
-        left: 97%;
+        left: 23%;
         transform: translate(-50%, -50%);
         cursor: pointer;
     }
@@ -53,9 +53,11 @@
         object-fit: cover;
         margin-bottom: 50px;
     }
-
     .container{
         display: flex;
+        max-width: fit-content;
+        gap: 30px;
+        margin: 0 auto;
         justify-content: center;
         text-align: center;
     }
@@ -80,9 +82,6 @@
     .main-content img:hover{
         box-shadow: 0 0 50px #555454;
         
-    }
-    #mode{
-        top: 5%;      
     }
     .main-cont{
         display: grid;
