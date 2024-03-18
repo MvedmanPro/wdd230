@@ -79,9 +79,9 @@ forecastData()
 
 function displayForecast(data) {
     // day 1
-    const day1Date = document.getElementById("day1D")
-    const day1Temp = document.getElementById("day1T")
-    const day1Desc = document.getElementById("day1Desc")
+    const day1Date = document.querySelector("#day1D")
+    const day1Temp = document.querySelector("#day1T")
+    const day1Desc = document.querySelector("#day1Desc")
     
     const day1 = data.list[0].dt * 1000
     const dateObj = new Date(day1)
@@ -96,9 +96,9 @@ function displayForecast(data) {
     day1Desc.textContent = capDesc
 
     // day 2
-    const day2Date = document.getElementById("day2D")
-    const day2Temp = document.getElementById("day2T")
-    const day2Desc = document.getElementById("day2Desc")
+    const day2Date = document.querySelector("#day2D")
+    const day2Temp = document.querySelector("#day2T")
+    const day2Desc = document.querySelector("#day2Desc")
 
     const dtSec2 = data.list[8].dt
     const dateObj2 = new Date(dtSec2*1000)
@@ -113,9 +113,9 @@ function displayForecast(data) {
     day2Desc.textContent = capDesc2
 
     // day 3
-    const day3Date = document.getElementById("day3D")
-    const day3Temp = document.getElementById("day3T")
-    const day3Desc = document.getElementById("day3Desc")
+    const day3Date = document.querySelector("#day3D")
+    const day3Temp = document.querySelector("#day3T")
+    const day3Desc = document.querySelector("#day3Desc")
     
     const dtSec3 = data.list[16].dt
     const dateObj3 = new Date(dtSec3*1000)
