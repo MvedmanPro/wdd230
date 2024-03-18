@@ -8,11 +8,30 @@
         margin-left: 20px;
     }
     .navigation {
+        margin-left: 20%;
         width: 50%;
         top: 2%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    #mode{
+        position: absolute;
+        top: 15%;
+        padding: 3px;
+        left: 97%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+    section.events-weather{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 940px;
+        border: 2px solid #555454
+    }
+    .section1{
+        grid-column: 1/2;
     }
 
     .navigation li {
@@ -26,15 +45,22 @@
         display: none;
     }
     .section1, .section2, .events-weather {
-        position: relative;
         padding: 1rem;
-        justify-self: center;
     }
-    
+    .img-container img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 50px;
+    }
+
     .container{
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+    .img-container .btn {
+        width: 200px;
     }
     .grid-container {
         display: grid;

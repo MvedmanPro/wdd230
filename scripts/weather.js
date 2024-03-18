@@ -25,7 +25,7 @@ apiFetch();
 
 function displayResults(data) {
     const temp = Math.round(data.main.temp)
-    currentTemp.innerHTML = `${temp}&deg;F`
+    currentTemp.innerHTML = `${temp}&deg;C`
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
     let desc = data.weather[0].description
     let capDesc = titleCase(desc)

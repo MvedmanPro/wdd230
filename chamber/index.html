@@ -41,33 +41,66 @@
             </picture>
         </div>
     </header>
+    <section id="meetingBanner" class="banner">
+        <button id="meetingBannerBtn"></button>
+        <h2>Chamber Meet and Greet</h2>
+        <p>Join our weekly meetings on Wednesdays at 7:00pm!</p>
+    </section>
     <main>
         <section class="events-weather">
             <div class="section1">
-                <h2>Events: <span id="events"></span></h2>
+                <h2>Events:</h2>
+                    <ul>
+                        <li>
+                            Night of Light Downtown: An annual event where local businesses stay open after hours, handing out candy and offering carnival-style games, rides, and entertainment. 
+                            It’s a great opportunity for small businesses to engage with the community and attract visitors. 🎡
+                        </li>
+                        <li>
+                            Farwest Odessa: A versatile event center that hosts a variety of gatherings, from corporate events to live music shows. Small businesses can 
+                            consider collaborating with Farwest for product launches, workshops, or networking events. 🎤🎉 
+                        </li>
+                    </ul>
             </div>
             <div class="section2">
-                <h2>Weather: Temperature: <span id="temperature">35</span>°F, Wind Speed: <span id="windSpeed">7</span>mph, Wind Chill: <span id="windChill"></span></h2>
+                <h2>Current Weather: <span id="temperature"></span></h2>
+                    Wind Speed: <span id="windSpeed"></span>mph,<span id="windPara"> and wind chill of: </span><span id="windChill"></span></h2>
+                    <figure>
+                        <img id="weather-icon" src="" alt="weather icon">
+                        <figcaption></figcaption>
+                    </figure>
+                    <br>
+                    <h3>Odesa's 3-day Forecast</h3>
+                    <div id="forecast">
+                        <p id="day1Date"></p>
+                        <p id="day1Temp"></p>
+                        <p id="day1Desc"></p>
+                        <p id="day2Date"></p>
+                        <p id="day2Temp"></p>
+                        <p id="day2Desc"></p>
+                        <p id="day3Date"></p>
+                        <p id="day3Temp"></p>
+                        <p id="day3Desc"></p>
+                    </div>
             </div>
         </section>   
         <section class="container">
             <div class="card">
                 <div class="card-image">
-                    <img src="images/people360.webp" alt="Event image">
+                    <img src="images/card1_400x360.jpg" width="400" height="360" alt="Event image">
                 </div>
                 <h2>Title</h2>
                 <p>Text</p>
             </div>
             <div class="card2">
                 <div class="card-image">
-                    <img src="images/commerce.webp" alt="Image">
+                    <img src="images/card2_400x360.jpg" width="400" height="360" alt="Image">
                 </div>
                 <h2>Title</h2>
                 <p>Text</p>
             </div>
             <div class="card3">
                 <div class="card-image">
-                    <img src="images/start360.webp" alt="Members image">
+                    <img src="images/card3_400x360.jpg" width="400" height="360" alt="Members image">
                 </div>
                 <h2>Title</h2>
                 <p>Text</p>
@@ -76,11 +109,13 @@
     </main>
     <footer>
         <p id="copyright">© <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
-        <p id="lastmodified"> Last Modified:</p>
+        <p id="lastmodified"><span id="myHiddenField"></span>Last Modified:</p>
         <p>WDD 230 - Odesa Chamber of Commerce Website</p>
     </footer>
 <script src="scripts/hamburger_menu.js"></script>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/darkmode.js"></script>
+<script src="scripts/weather.js"></script>
+<script src="scripts/banner.js"></script>
 </body>
 </html>
