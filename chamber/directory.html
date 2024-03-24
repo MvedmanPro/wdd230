@@ -20,11 +20,11 @@
 <body>
     <header>
         <div class="img-container">
-            <div id="mode">
+            <div id="mode" aria-label="Dark/Light Mode Button">
                 <p>🔮</p>
             </div>
             <h1>Odesa Chamber of Commerce</h1>
-            <a id="menu" href="#"></a>
+            <a id="menu" href="index.html" aria-label="Navigation"></a>
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
@@ -33,15 +33,15 @@
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
-            <a class="btn" href="join.html">JOIN</a>
+            <a class="btn" href="join.html" aria-label="join us button">JOIN</a>
             <picture>
-                <source media="(max-width: 600px)" srcset="images/hero-img.webp">
-                <source media="(max-width: 900px)" srcset="images/hero-img.webp">
-                <img src="images/hero-img.webp" alt="Background img">
+                <source media="(max-width: 600px)" srcset="images/hero-img62kb.webp">
+                <source media="(max-width: 900px)" srcset="images/hero-img62kb.webp">
+                <img src="images/hero-img62kb.webp" alt="Background img of the city's founder Duke de Richelieu" width="2037" height="948">
             </picture>
         </div>
     </header>
-    <main>
+    <main id="directory">
         <h2 class="directory">Business Directory</h2>
         <div class="menu">
             <button id="grid">Grid View</button>
@@ -54,6 +54,15 @@
 
     </main>
     <footer>
+        <div id="contact">
+            <p>Reach Odesa Chamber Represantative at: 262-752-8891</p>
+            <div id="connect">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.jpeg" alt="FB logo"
+                        width="32" height="32" style="cursor: pointer;" loading="lazy" title="Facebook.com"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/inst-logo.png"
+                        alt="instagram logo" width="32" height="32" style="cursor: pointer;" loading="lazy" title="Instagram.com"></a>
+            </div>
+        </div>
         <p id="copyright">© <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
         <p id="lastmodified"> Last Modified:</p>
         <p>WDD 230 - Odesa Chamber of Commerce Website</p>

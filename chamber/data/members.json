@@ -8,8 +8,8 @@
                         "address": "20 Bazova St, Ovidiopol, Odesa Ukraine 67806",
                         "phone": "+38(048)797-05-08",
                         "website": "https://www.7km.net/",
-                        "imgUrl":"https://7km.net/Portals/0/easygalleryimages/12/2844/%D0%B0%D1%80%D0%BA%D0%B0-3.jpg",
-                        "membership": "platinum"
+                        "imgUrl":"images/directory/7km.jpg",
+                        "membershipLevel": "platinum"
                     }
                 ]
 
@@ -23,9 +23,10 @@
                         "address": "12/1 Francyzkyi Blvd, office 27, Odesa Ukraine 65044",
                         "phone": "+38(098)215-89-91",
                         "website": "https://www.b52.ua/",
-                        "imgUrl":"https://www.b52.ua/img/collage.png",
-                        "membership": "NP"
-    
+                        "imgUrl":"images/directory/collage.png",
+                        "membershipLevel": "NP",
+                        "membershipYears": "1/2 Year",
+                        "message": "It's a pleasure to be a part of this community!"
                     }
                 ]
 
@@ -39,8 +40,10 @@
                         "address": "19 Zhukovskogo St, Odesa Ukraine 65020",
                         "phone": "+38(073)600-09-91",
                         "website": "https://www.tripadvisor.com/Restaurant_Review-g295368-d12997825-Reviews-Foundation_Coffee_Roasters-Odesa_Odesa_Oblast.html",
-                        "imgUrl":"https://media-cdn.tripadvisor.com/media/photo-s/17/0e/46/69/caption.jpg",
-                        "membership": "Bronze"
+                        "imgUrl":"images/directory/foundation.jpg",
+                        "membershipLevel": "Bronze",
+                        "membershipYears": "4 Years",
+                        "message": "Everything is easier when working with a team!"
                     }
                 ]
 
@@ -54,8 +57,10 @@
                         "address": "11B Frantsuzskiy Blvd, Odesa Ukraine 65012",
                         "phone": "+38(096)775-30-50",
                         "website": "https://www.facebook.com/shtrudelcafe/",
-                        "imgUrl":"https://media-cdn.tripadvisor.com/media/photo-s/12/9d/b5/74/getlstd-property-photo.jpg",
-                        "membership": "Bronze"
+                        "imgUrl":"images/directory/shtrudel.jpg",
+                        "membershipLevel": "Bronze",
+                        "membershipYears": "1 Year",
+                        "message": "We grow our business faster than imagined!"
                     }
                 ]
 
@@ -69,8 +74,10 @@
                         "address": "2nd Lermontovskiy Lane, 1, Odesa Ukraine 65014",
                         "phone": " +38(048)705-55-52",
                         "website": "https://www.lagiocondahotel.com/",
-                        "imgUrl":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/f3/7b/b7/caption.jpg?w=1200&h=-1&s=1",
-                        "membership": "Silver"
+                        "imgUrl":"images/directory/hotel.jpg",
+                        "membershipLevel": "Silver",
+                        "membershipYears": "3 Years",
+                        "message": "So many benefits of the membership led to so many customers and success!"
                     }
                 ]
 
@@ -84,9 +91,11 @@
                     "address": "15 Pushkinska St, Odesa Ukraine 65026",
                     "phone": "+38(048)705-55-52",
                     "website": "https://bristol-hotel.com.ua/en/",
-                    "imgUrl":"https://bristol-hotel.com.ua/assets/uploads/2019/09/torzh_sobytiya_2-min.jpg",
-                    "membership": "Gold"
-                    }
+                    "imgUrl":"images/directory/hotel2.jpg",
+                    "membershipLevel": "Gold",
+                    "membershipYears": "5 Years",
+                    "message": "We know what our clients need and we know wat we need to improve, thanks to Odesa Chamber Gold Membership!"
+            }
                 ] 
 
             },
@@ -99,8 +108,10 @@
                     "address": "25 Lanzheron Beach, Odesa Ukraine",
                     "phone": "+38(048)720-70-70",
                     "website": "http://www.nemo.od.ua/",
-                    "imgUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/4d/d8/df/imag5578-largejpg.jpg?w=1200&h=-1&s=1",
-                    "membership": "Gold"
+                    "imgUrl": "images/directory/delphinarium.jpg",
+                    "membershipLevel": "Gold",
+                    "membershipYears": "7 Years",
+                    "message": "We are celebrating our 7th year of success since we joined Odesa Chamber!"
                     }
                 ]
             }

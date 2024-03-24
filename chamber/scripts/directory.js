@@ -1,6 +1,4 @@
 
-/*Buttons don't work for some reason*/
-
 document.addEventListener("DOMContentLoaded", () => {
     const gridbutton = document.querySelector("#grid");
     const listbutton = document.querySelector("#list");
@@ -39,12 +37,14 @@ const displayMembers = (members) => {
             let name = document.createElement("h2");
             let address = document.createElement("p");
             let phone = document.createElement("p");
+            let membershipLevel = document.createElement("p");
             let website = document.createElement("a");
             let imgUrl = document.createElement("img");
 
             name.textContent = `Company: ${object.name}`;
             address.textContent = `Address: ${object.address}`;
             phone.textContent = `Phone Number: ${object.phone}`;
+            membershipLevel.textContent = `Membership: ${object.membershipLevel}`
             website.textContent = `Click to Visit Website`;
 
             website.setAttribute("href", object.website)

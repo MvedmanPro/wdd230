@@ -14,4 +14,5 @@ meetingBannerDisplay()
 
 meetingBanBtn.addEventListener("click", () => {
     meetingBanner.classList.toggle("close")
+    meetingBanner.classList.toggle("show")
 });
