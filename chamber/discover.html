@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kateryna Glazkhova">
     <meta name="description" content="WDD 230 - Web Frontend Development - Kateryna - Chamber Website">
-    <meta property="og:title" content="WDD230 - Odesa Chamber of Commerce Home Page - KG">
+    <meta property="og:title" content="WDD230 - Odesa Chamber of Commerce Discover Page - KG - Discover sights of Odesa, about Odesa in Ukraine and its attractions">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.europafm.ro/wp-content/uploads/2023/01/odesa-850x638.jpg">
     <meta property="og:url" content="https://mvedmanpro.github.io/wdd230">
@@ -24,7 +24,7 @@
                 <p>🔮</p>
             </div>
             <h1>Odesa Chamber of Commerce</h1>
-            <a id="menu" href="#"></a>
+            <a id="menu" href="index.html" aria-label="Navigation"></a>
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
@@ -34,32 +34,33 @@
                 </ul>
             </nav>
             <picture>
-                <source media="(max-width: 600px)" srcset="images/hero-img.webp">
-                <source media="(max-width: 900px)" srcset="images/hero-img.webp">
-                <img src="images/hero-img.webp" alt="Background img">
+                <source media="(max-width: 600px)" srcset="images/hero-img62kb.webp">
+                <source media="(max-width: 900px)" srcset="images/hero-img62kb.webp">
+                <img src="images/hero-img62kb.webp" alt="Background img" width="2037" height="948">
             </picture>
         </div>
     </header>
-    <main>
+    <main id="discover">
         <div class="grid-container">
             <div class="sidebar">
-                <h3>About Odesa</h3>
-                <p>Odesa is a vibrant city known for...</p>
-            
-                <h3>Attractions</h3>
+                <h2 class="events-discover">About Odesa</h2>
+                <p>Odesa, a gem on the Black Sea coast, is a city that exudes charm and elegance at every turn.</p>
+                <h3 class="events-discover">Upcoming Events</h3>
                 <ul>
-                    <li>Attraction 1</li>
-                    <li>Attraction 2</li>
-    
+                   <li>Festival of Humor on 04/01/2024</li>
+                   <li>Odesa International Film Festival on 04/20/2024</li>
                 </ul>
-                <h3>Upcoming Events</h3>
+                <h3 class="events-discover">Attractions</h3>
                 <ul>
-                   <li>Event 1 on Date 1</li>
-                   <li>Event 2 on Date 2</li>
+                    <li>
+                        Odesa Opera & Ballet Theatre: This architectural jewel was designed in the 1880s by the architects who also designed the famous Vienna State Opera.
+                    </li>
+                    <li>Derybasivska Street: Odesa’s main commercial street, pedestrian St. Derybasivska is jam-packed with restaurants, bars, and tourists during the summer high season.</li>
+    
                 </ul>
                 <p id="visitMessage"></p>
             </div>
-        <div class="main-content">
+        <div class="main-content-discover">
             <picture><img loading="lazy" src="images/architect400.webp" alt="Odesa Architecture"></picture>
             <p class="caption">A glimpse into the architectural beauty of Odesa.</p>
         <picture><img loading="lazy" src="images/industry_400.webp" alt="Odesa Industrial City/Port"></picture>
@@ -85,7 +86,6 @@
 <script src="scripts/hamburger_menu.js"></script>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/darkmode.js"></script>
-<script src= "scripts/windchill.js"></script>
 <script src="scripts/localStorage.js"></script>
 </body>
 </html>

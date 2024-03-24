@@ -49,6 +49,7 @@
     }
     .img-container img{
         width: 100%;
+        max-width: 100%;
         height: auto;
         object-fit: cover;
         margin-bottom: 50px;
@@ -74,20 +75,19 @@
         border-right: 4px solid #F5CAB2;
 
     }
-    .main-content {
-        grid-template-columns: 1fr 1fr;
+    .sidebar {
+        max-width: 750px;
+        max-height: 400px; 
+    }
+    .main-content-discover {
+        margin-top: 2%;
+        margin-bottom: 4%;
         max-width: 400px;
         margin-left: 25%;
     }
-    .main-content img:hover{
+    .main-content-discover img:hover{
         box-shadow: 0 0 50px #555454;
         
-    }
-    .main-cont{
-        display: grid;
-        column-gap: 10px;
-        margin-top: 2%;
-        margin-bottom: 4%;
     }
     .membLevel{
         grid-column: 3/4;
@@ -95,7 +95,7 @@
     }
     .list section img {
         display: block;
-         margin-bottom: 20px;
+        margin-bottom: 20px;
     }
     .list section a{
         color: rgb(3, 3, 3);
