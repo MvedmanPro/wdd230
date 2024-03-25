@@ -1,119 +1,73 @@
 {
     "members":[
-           {
-               "count": "01",
-                "company": [ 
-                    { 
-                        "name": "7km",
-                        "address": "20 Bazova St, Ovidiopol, Odesa Ukraine 67806",
-                        "phone": "+38(048)797-05-08",
-                        "website": "https://www.7km.net/",
-                        "imgUrl":"images/directory/7km.jpg",
-                        "membershipLevel": "platinum"
-                    }
-                ]
 
-            },
-            {
-                "count": "02",
-                "company": 
-                [ 
-                    { 
+                { 
+                    "name": "7km",
+                    "address": "20 Bazova St, Ovidiopol, Odesa Ukraine, 67806",
+                    "phone": "+38(048)797-05-08",
+                    "website": "https://www.7km.net/",
+                    "imgUrl":"images/directory/7km.jpg",
+                    "membershipLevel": "Premium"
+                },
+                { 
                         "name": "Studio Plus",
-                        "address": "12/1 Francyzkyi Blvd, office 27, Odesa Ukraine 65044",
+                        "address": "12/1 Francyzkyi Blvd, office 27, Odesa Ukraine, 65044",
                         "phone": "+38(098)215-89-91",
                         "website": "https://www.b52.ua/",
                         "imgUrl":"images/directory/collage.png",
                         "membershipLevel": "NP",
                         "membershipYears": "1/2 Year",
                         "message": "It's a pleasure to be a part of this community!"
-                    }
-                ]
-
-            },
-            {
-                "count": "03",
-                "company": 
-                [ 
-                    { 
+                },
+                { 
                         "name": "Foundation Coffee Roasters",
-                        "address": "19 Zhukovskogo St, Odesa Ukraine 65020",
+                        "address": "19 Zhukovskogo St, Odesa Ukraine, 65020",
                         "phone": "+38(073)600-09-91",
                         "website": "https://www.tripadvisor.com/Restaurant_Review-g295368-d12997825-Reviews-Foundation_Coffee_Roasters-Odesa_Odesa_Oblast.html",
                         "imgUrl":"images/directory/foundation.jpg",
                         "membershipLevel": "Bronze",
                         "membershipYears": "4 Years",
                         "message": "Everything is easier when working with a team!"
-                    }
-                ]
-
-            },
-            {
-                "count":"04",
-                "company": 
-                [ 
-                    { 
+                },
+                { 
                         "name": "Shtrudel",
-                        "address": "11B Frantsuzskiy Blvd, Odesa Ukraine 65012",
+                        "address": "11B Frantsuzskiy Blvd, Odesa Ukraine, 65012",
                         "phone": "+38(096)775-30-50",
                         "website": "https://www.facebook.com/shtrudelcafe/",
                         "imgUrl":"images/directory/shtrudel.jpg",
                         "membershipLevel": "Bronze",
                         "membershipYears": "1 Year",
                         "message": "We grow our business faster than imagined!"
-                    }
-                ]
-
-            },
-            {
-                "count":"05",
-                "company": 
-                [ 
-                    { 
+                },
+                { 
                         "name": "La Gioconda Boutique Hotel",
-                        "address": "2nd Lermontovskiy Lane, 1, Odesa Ukraine 65014",
+                        "address": "2nd Lermontovskiy Lane, 1, Odesa Ukraine, 65014",
                         "phone": " +38(048)705-55-52",
                         "website": "https://www.lagiocondahotel.com/",
                         "imgUrl":"images/directory/hotel.jpg",
                         "membershipLevel": "Silver",
                         "membershipYears": "3 Years",
                         "message": "So many benefits of the membership led to so many customers and success!"
-                    }
-                ]
-
-            },
-            {
-                "count":"06",
-                "company": 
-                [ 
-                    { 
+                },
+                { 
                     "name": "Bristol Hotel",
-                    "address": "15 Pushkinska St, Odesa Ukraine 65026",
+                    "address": "15 Pushkinska St, Odesa Ukraine, 65026",
                     "phone": "+38(048)705-55-52",
                     "website": "https://bristol-hotel.com.ua/en/",
                     "imgUrl":"images/directory/hotel2.jpg",
                     "membershipLevel": "Gold",
                     "membershipYears": "5 Years",
                     "message": "We know what our clients need and we know wat we need to improve, thanks to Odesa Chamber Gold Membership!"
-            }
-                ] 
-
-            },
-            {
-                "count":"07",
-                "company": 
-                [ 
-                    { 
+                },
+                { 
                     "name": "Odessa Delphinarium Nemo",
-                    "address": "25 Lanzheron Beach, Odesa Ukraine",
+                    "address": "25 Lanzheron Beach, Odesa Ukraine, 65055",
                     "phone": "+38(048)720-70-70",
                     "website": "http://www.nemo.od.ua/",
                     "imgUrl": "images/directory/delphinarium.jpg",
                     "membershipLevel": "Gold",
                     "membershipYears": "7 Years",
                     "message": "We are celebrating our 7th year of success since we joined Odesa Chamber!"
-                    }
-                ]
-            }
+                }
         ]
     }

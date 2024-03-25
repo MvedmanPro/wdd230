@@ -147,6 +147,23 @@ ul li {
 h2,p{
     height: 50px;
 }
+.spotlight {
+    background-color: #ebebeb;
+    margin: 0px 20px 20px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+.spotlight-container {
+    padding: 40px;
+    background-color: #ebebeb;
+    margin: 0 auto;
+    border: 1px solid#000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+.spotlight .membersGrid {
+    margin: 0 auto;
+}
 #discover{
     background-color: #F6EEE3;    
 }
@@ -211,29 +228,31 @@ ul li{
 }
 footer {
     display: block;
+    text-align: center;
     font-family: 'EB Garamond', serif;
-    grid-gap: 2rem;
     width: 100%;
     height: auto;
     background: linear-gradient(white,#ebc8a6,#6d3727);
-    color: rgb(243, 243, 243);
+    color: rgb(0, 0, 0);
 }
 #contact {
-    display: flex;
+    display: block;
     justify-content: center;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
     border-bottom: 2px solid white;
 
 }
 #contact p {
-    justify-self: center;
-    margin-top: 5%;
-    margin-left: 2%;
+    text-align: center;
     color: black;
+    margin-bottom: -40px;
 }
 #connect {
-    margin-top: 25%;
+    margin-top: 5%;
+    justify-items: center;
+    padding: 2%;
+    width: 100%;
+    max-width: 100px;
+    background-color: #573c3c;
 }
 #connect a {
     padding: 0.5rem;
@@ -251,11 +270,16 @@ body.dark-mode .section2{
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
+body.dark-mode .spotlight,
 body.dark-mode .grid-container,
 body.dark-mode .section1 ul li,
 body.dark-mode .card, 
 body.dark-mode .card2, 
 body.dark-mode .card3,
+body.dark-mode #directory,
+body.dark-mode #mainDiv,
+body.dark-mode #join-page,
+body.dark-mode #directory ,
 body.dark-mode .sidebar{
     color: #fff;
     background-color: #000;

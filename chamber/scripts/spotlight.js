@@ -1,49 +1,83 @@
-async function getEliteMembers() {
-    const url = "https://mvedmanpro.github.io/wdd230/chamber/data/members.json"
-    const response = await fetch(url)
-    const data = await response.json()
-    displaySpotlight(data.members)
+const display = document.querySelector('.membersGrid');
+const membersData = "data/members.json";
+
+// Function to fetch members data
+async function getMembers() {
+    const response = await fetch(membersData);
+    const data = await response.json();
+    return data.members;
 }
-getEliteMembers()
 
-const displaySpotlight = (members) => {
-    const eliteList = []
+// Randomly select members with membership level Silver or Gold
+function selectRandomSilverGoldMembers(members, count) {
+    const silverGoldMembers = members.filter(member => member.membershipLevel === 'Silver' || member.membershipLevel === 'Gold');
+    const selectedMembers = [];
 
-    members.forEach(member => {
-        if (member.membershipLevel == "Silver" || member.membershipLevel == "Gold" )
-        eliteList.push(member)
-    });
-
-    function shuffle(eliteList) {
-        return eliteList.sort (() => Math.random()-0.5)
+    // Ensure that selected members are unique
+    while (selectedMembers.length < count && silverGoldMembers.length > 0) {
+        const randomIndex = Math.floor(Math.random() * silverGoldMembers.length);
+        const selectedMember = silverGoldMembers[randomIndex];
+        if (!selectedMembers.some(member => JSON.stringify(member) === JSON.stringify(selectedMember))) {
+            selectedMembers.push(selectedMember);
+        }
+        // Remove selected member to avoid duplicate
+        silverGoldMembers.splice(randomIndex, 1);
     }
-    shuffle(eliteList)
-    
-    // display three elite members
-    const threeSpotlights = eliteList.slice(0, 3)    
-    const spotlightSection = document.querySelector(".spotlight")
-    
-    threeSpotlights.forEach(spotlight => {
-        const spotlightCard = document.createElement("section")
-        const picture = document.createElement("img")
-        const name = document.createElement("p")
-        const level = document.createElement("p")
-        const blurb = document.createElement("p")
-        
-        spotlightCard.setAttribute("class", "card")
-        picture.setAttribute("src", spotlight.imgURL)
-        picture.setAttribute("alt", `${spotlight.name} company's image`)
-        picture.setAttribute("width", "400")
-        picture.setAttribute("height", "250")
-        picture.setAttribute("loading", "lazy")
-        name.textContent = spotlight.name
-        level.textContent = `Membership Level: ${spotlight.membershipLevel}`
-        blurb.textContent = spotlight.spotlightmessage
-        
-        spotlightCard.appendChild(logo)
-        spotlightCard.appendChild(name)
-        spotlightCard.appendChild(level)
-        spotlightCard.appendChild(message)
-        spotlightSection.appendChild(spotlightCard)
+
+    return selectedMembers;
+}
+
+// Display randomly selected members
+async function displayRandomSpotlightMembers(count) {
+    const members = await getMembers();
+    const selectedMembers = selectRandomSilverGoldMembers(members, count);
+
+    createMemberCard(selectedMembers);
+}
+
+// Initialize by displaying random members
+async function initialize() {
+    await displayRandomSpotlightMembers(3); // Number of members to display
+}
+
+// Create member article
+const createMemberCard = (members) => {
+    // Clear existing cards
+    display.innerHTML = '';
+
+    members.forEach((member) => {
+        let card = document.createElement('article');
+        let image = document.createElement('img');
+        let details = document.createElement('div');
+        let name = document.createElement('h3');
+        let mes = document.querySelector('p');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('a');
+        let membership = document.createElement('p');
+        name.textContent = member.name;
+        let addressParts = member.address.split(', ');
+        let streetAddress = addressParts[0];
+        let cityZip = addressParts.slice(1).join(', ');
+        address.innerHTML = `${streetAddress}<br>${cityZip}`;
+        mes.textContent = member.message;
+        phone.textContent = member.phone;
+        website.href = member.website;
+        website.textContent = member.website;
+        membership.textContent = `Membership Level: ${member.membershipLevel}`;
+        image.setAttribute('src', member.imgUrl);
+        image.setAttribute('alt', `Picture of ${member.name}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '');
+        image.setAttribute('height', '100px');
+
+        details.classList.add('member-details');
+
+        details.append(name, address, phone, website, membership, mes);
+        card.append(image, details);
+        display.appendChild(card);
     });
 }
+
+// Call initialize() when page loads
+initialize();
