@@ -18,4 +18,10 @@
     #card3{
         grid-row: 2/3;
     }
+    .sidebar{
+        width: 400px;
+    }
+    #discover{
+        width: 500px;
+    }
 }
