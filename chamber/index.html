@@ -20,20 +20,18 @@
 <body>
     <header>
         <div class="img-container">
-            <div id="mode" aria-label="Dark/Light Mode Button">
-                <p>🔮</p>
-            </div>
+            <div id="mode">Dark Mode</div>
             <h1>Odesa Chamber of Commerce</h1>
-            <a id="menu" href="index.html" aria-label="Navigation"></a>
-            <nav>
-                <ul class="navigation">
+            <button id="hamButton" aria-label=" Hamburger Navigation Menu"></button>
+            <nav id="mainNav">
+                <ul id="navigation">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discovery</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
-            <a class="btn" href="join.html" aria-label="join us button">JOIN</a>
+            <button id="joinBtn" aria-label="Join Us Button">JOIN</button>
             <picture>
                 <source media="(max-width: 600px)" srcset="images/hero-img62kb.webp">
                 <source media="(max-width: 900px)" srcset="images/hero-img62kb.webp">
@@ -42,7 +40,7 @@
         </div>
     </header>
     <section id="meetingBanner" class="banner">
-        <button id="meetingBannerBtn"></button>
+        <button id="meetingBannerBtn" aria-label="meeting banner button"></button>
         <h2>Chamber Meet and Greet</h2>
         <p>Join our weekly meetings on Wednesdays at 7:00pm!</p>
     </section>
@@ -65,7 +63,7 @@
                 <h2>Current Weather: <span id="temperature"></span></h2>
                     <p>Wind Speed: <span id="windSpeed"></span>mph,<span id="windP"> and wind chill of: </span><span id="windChill"></span></p>
                     <figure>
-                        <img id="weather-icon" src="site" alt="weather icon">
+                        <img id="weather-icon" src="" alt="weather icon">
                         <figcaption></figcaption>
                     </figure>
                     <br>
@@ -84,7 +82,7 @@
             </div>
         </section>   
         <section class="container">
-            <div class="card">
+            <div id="card1">
                 <div class="card-image">
                     <img src="images/card1_400x360.webp" width="400" height="360" alt="Event image">
                 </div>
@@ -96,7 +94,7 @@
                     Consumer Goods Manufacturing: The city produces various consumer goods.
                     Food Processing: Odesa plays a role in food processing.</p>
             </div>
-            <div class="card2">
+            <div id="card2">
                 <div class="card-image">
                     <img src="images/card2_400x360.webp" width="400" height="360" alt="Image">
                 </div>
@@ -105,7 +103,7 @@
                     Odesa has been immortalized in literature, including Isaac Babel’s “The Odessa Tales.” The city’s multicultural past and vibrant present contribute to its unique cultural identity.
                     Historical Tours: Explore Odesa’s catacombs, historical sites, and architectural landmarks through guided tours.</p>
             </div>
-            <div class="card3">
+            <div id="card3">
                 <div class="card-image">
                     <img src="images/card3_400x360.webp" width="400" height="360" alt="Members image">
                 </div>
@@ -124,10 +122,8 @@
         <div id="contact">
             <p>Reach Odesa Chamber Represantative at: 262-752-8891</p>
             <div id="connect">
-                <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.jpeg" alt="FB logo"
-                        width="32" height="32" style="cursor: pointer;" loading="lazy" title="Facebook.com"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="images/inst-logo.png"
-                        alt="instagram logo" width="32" height="32" style="cursor: pointer;" loading="lazy" title="Instagram.com"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.jpeg" alt="FB logo" loading="lazy" title="Facebook.com"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/inst-logo.png" alt="instagram logo" loading="lazy" title="Instagram.com"></a>
             </div>
         </div>
         <p id="copyright">&copy; <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>

@@ -1,8 +1,10 @@
 body{
+    max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(#995844f8,white,#ebc8a6,white);
     height: auto;
     font-family: 'EB Garamond', serif;
-    background: linear-gradient(#995844f8,white,#ebc8a6,white);
 }
 .img-container{
     text-align: center;
@@ -18,7 +20,7 @@ body{
 .img-container{
     color: #F6EEE3
 }
-.img-container .btn {
+.img-container #joinBtn {
     position: absolute;
     top: 80%; 
     left: 50%;
@@ -26,6 +28,7 @@ body{
     width: 100px;
     font-weight: bold;
     padding: 10px;
+    cursor: pointer;
     background-color: #F6EEE3;
     color: #0C141D;
     border: 5px double #0C141D;
@@ -35,39 +38,46 @@ body{
     text-decoration: none;
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
-.img-container .btn:hover,
-.img-container .btn:active{
+.img-container #joinBtn:hover,
+.img-container #joinBtn:active{
     color: #F6EEE3;
     background-color:#56A094;
     padding: 15px;
     border: 4px double #F6EEE3;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
-#menu::before{
-    content:"≡";
-    background-color: #fbfefd;
-    margin-left: 50%;
-    padding: 2px;
+header{
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
 }
 #mode{
-    position: absolute;
-    top: 20%;
-    padding: 3px;
-    margin-left: 75%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+    margin-left: 90%;
+    padding: 15px;
 }
-.navigation{
+#hamButton{
+    display: block;
+    position: sticky;
+    background-color: #fbfefd;
+    margin-left: 70%;
+    padding: 5px;
+}
+#hamButton::before{
+    content:"≡";
+}
+#mainNav{
+    margin: 0 auto;
+    width: 420px;
+}
+#mainNav #navigation{
     list-style: none;
     position: absolute;
-    left: 20%;
-    top: 58%;
-    transform: translateY(-50%);
+    transform: translateY(-50%, -50%);
 }
-.navigation li{
+#navigation li{
     display: none;
 }
-.navigation a{
+#navigation a{
     max-width: 200px;
     justify-content: center;
     color: #0C141D;
@@ -82,7 +92,8 @@ body{
     text-decoration: none;
     transition: 0.5s;
 }
-.navigation a:hover{
+#navigation a:hover,
+#hamButton:hover {
     background-color: #56A094;
     color: #F6EEE3;
     border: 2px solid #F6EEE3;
@@ -90,15 +101,15 @@ body{
     letter-spacing: 3px;
     padding: 8px;
 }
-.show li{
+#navigation.show li{
     display: block;
 }
-#menu.show::before{
+#hamButton.show::before{
     content: "x";
 }
-.event-weather{
+/*.event-weather{
     max-height: fit-content;
-}
+}*/
 .events-weather{
     margin: 0 auto;
     max-width: 420px;
@@ -125,24 +136,32 @@ ul li {
     display: block;
     padding: 1rem;
 }
-.card, .card2, .card3{
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 420px;
+}
+#card1, #card2, #card3{
     background-color:#F6EEE3;
-    max-width: 400px;
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
     padding: 5px;
-    height: 650px;
+    height: 700px;
     border-radius: 20px;
     margin: 30px auto;
     border: 2px double #56A094;
 }
 .card-image{
-    align-items: center;
     margin: 0 auto;
-    max-width: 400px;
+    width: 250px;
+    height: auto;
     margin-top: 15px;
-    border: 2px solid #56A094;
 }
 .card-image img{
-    aspect-ratio: 1/1;
+    border: 2px solid #56A094;
+    width: 250px;
+    height: auto;
 }
 h2,p{
     height: 50px;
@@ -235,6 +254,11 @@ footer {
     background: linear-gradient(white,#ebc8a6,#6d3727);
     color: rgb(0, 0, 0);
 }
+footer img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
 #contact {
     display: block;
     justify-content: center;
@@ -273,16 +297,19 @@ body.dark-mode h3,
 body.dark-mode .spotlight,
 body.dark-mode .grid-container,
 body.dark-mode .section1 ul li,
-body.dark-mode .card, 
-body.dark-mode .card2, 
-body.dark-mode .card3,
+body.dark-mode #card1, 
+body.dark-mode #card2,
+body.dark-mode #card3,
 body.dark-mode #directory,
 body.dark-mode #mainDiv,
 body.dark-mode #join-page,
-body.dark-mode #directory ,
+body.dark-mode #directory,
+body.dark-mode footer p,
+body.dark-mode #contact p,
 body.dark-mode .sidebar{
     color: #fff;
     background-color: #000;
+    padding: 5px;
 }
 /*---For Join us page, webform---*/
 .grid-form{
