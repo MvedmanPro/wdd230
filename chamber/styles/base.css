@@ -52,7 +52,7 @@ header{
     margin: 0 auto;
 }
 #mode{
-    margin-left: 90%;
+    margin-left: 70%;
     padding: 15px;
 }
 #hamButton{
@@ -294,6 +294,7 @@ body.dark-mode .section2{
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
+body.dark-mode a,
 body.dark-mode .spotlight,
 body.dark-mode .grid-container,
 body.dark-mode .section1 ul li,
@@ -309,7 +310,6 @@ body.dark-mode #contact p,
 body.dark-mode .sidebar{
     color: #fff;
     background-color: #000;
-    padding: 5px;
 }
 /*---For Join us page, webform---*/
 .grid-form{
