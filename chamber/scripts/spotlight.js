@@ -37,7 +37,7 @@ async function displayRandomSpotlightMembers(count) {
 
 // Initialize by displaying random members
 async function initialize() {
-    await displayRandomSpotlightMembers(3); // Number of members to display
+    await displayRandomSpotlightMembers(2); // Number of members to display
 }
 
 // Create member article

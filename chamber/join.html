@@ -20,24 +20,22 @@
 <body>
     <header>
         <div class="img-container">
-            <div id="mode" aria-label="Dark/Light Mode Button">
-                <p>🔮</p>
-            </div>
+            <div id="mode">Dark Mode</div>
             <h1>Odesa Chamber of Commerce</h1>
-            <a id="menu" href="index.html" aria-label="Navigation"></a>
-            <nav>
-                <ul class="navigation">
+            <button id="hamButton" aria-label=" Hamburger Navigation Menu"></button>
+            <nav id="mainNav">
+                <ul id="navigation">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discovery</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
-            <a class="joinBtn" aria-label="join us button">JOIN</a>
+            <button id="joinBtn" aria-label="Join Us Button">JOIN</button>
             <picture>
-                <source media="(max-width: 600px)" srcset="images/hero-img.webp">
-                <source media="(max-width: 900px)" srcset="images/hero-img.webp">
-                <img src="images/hero-img.webp" alt="Background img of the city's founder Duke de Richelieu" width="2037" height="948">
+                <source media="(max-width: 600px)" srcset="images/hero-img62kb.webp">
+                <source media="(max-width: 900px)" srcset="images/hero-img62kb.webp">
+                <img src="images/hero-img62kb.webp" alt="Background img of the city's founder Duke de Richelieu" width="2037" height="948">
             </picture>
         </div>
     </header>
@@ -137,9 +135,16 @@
     </div>
     </main>
     <footer>
+        <p>Reach Odesa Chamber Represantative at: 262-752-8891</p>
         <p id="copyright">© <span id="currentyear">| Kateryna Glazkova | Cambodia/USA</span></p>
         <p id="lastmodified"> Last Modified:</p>
         <p>WDD 230 - Odesa Chamber of Commerce Website</p>
+        <div id="connect">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.jpeg" alt="FB logo"
+                loading="lazy" title="Facebook.com"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/inst-logo.png"
+                alt="instagram logo" loading="lazy" title="Instagram.com"></a>
+        </div>
     </footer>
 <script src="scripts/hamburger_menu.js"></script>
 <script src="scripts/getdates.js"></script>

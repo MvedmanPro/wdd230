@@ -5,7 +5,7 @@
     }
     h1{
         text-align: left;
-        margin-left: 20px;
+        margin-left: 5px;
     }
     header, .container{
         max-width: 1200px;
@@ -14,6 +14,7 @@
     #navigation {
         position: sticky;
         width: 55%;
+        margin-left: 140px;
         margin-top: -50px;
         display: flex;
         flex-direction: row;
@@ -61,8 +62,10 @@
         justify-content: center;
         text-align: center;
     }
-    .img-container .btn {
+    .img-container #joinBtn{
+        top: 75%;
         width: 200px;
+    }
     }
     .grid-container {
         display: grid;
@@ -72,14 +75,11 @@
     .list section img {
         display: none;
     }
-    .sidebar{
-        text-align: center;
-        border-right: 4px solid #F5CAB2;
-
-    }
     .sidebar {
-        max-width: 750px;
-        max-height: 400px; 
+        max-width: 450px;
+        width: 100%;
+        height: 650px;
+        position: sticky;  
     }
     .main-content-discover {
         margin-top: 2%;
@@ -102,16 +102,14 @@
         text-align: center;
     }
     #connect {
-        justify-self: center;
-        margin-top: 2%;
-        margin-left: 6rem;
+        width: 100%;
+        max-width: 1200px;
     }
     #connect a {
-        padding: 0rem;
+        padding: 0.5rem;
     }
     .spotlight article{
         display: flex;
         gap: 20px;
 
     }
-}
