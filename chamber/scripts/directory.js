@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const baseURL = "https://mvedmanpro.github.io/wdd230/chamber";
-const url = "data/members.json";
+const url = "https://mvedmanpro.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector(".cards");
 
 async function getMembersData() {
