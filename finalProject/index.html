@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motor scooter rental company on the Island of Conzumel off the coast of 
+    Mexico in the western Caribbean Sea caters to locals, walk-in tourists, motor scooter enthusiasts, 
+    and cruise-based touring groups and partnerships.">
+    <meta property="og:title" content="'Scoots' Motor Rental Company">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://mvedmanpro.github.io/wdd230">
+    <meta name="author" content="Kateryna Glazkhova">
+    <link rel="canonical" href="https://mvedmanpro.github.io/wdd230/">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 240px)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="styles/larger.css">
+    <link rel="icon" href="images/scooter-icon.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <title>Best Motor Rentals in Conzumel, Mexico</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <label class="logo">🏝️</label>
+            <ul id="main-nav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<div id="main-grid">
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="images/scooters-view-1000px.webp" alt="Customers Enjoying a ride with the rented scooters at the beach of the Caribbean Sea">
+                <img id="slide-2" src="images/sign_edited.webp" alt="Welcome to Conzumel Island!">
+                <img id="slide-3" src="images/sightview_750px_height.webp" alt="Amazing view at the beach near Caribbean Sea">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        <div class="locations">
+            <p>Our Locations:</p>
+            <ul id="home-page-locations">
+                <li>Near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</li>
+                <li>Near the Terminal Puerta Maya further south along the coast which caters to the cruise lines and patrons</li>
+            </ul>
+        </div>
+    </section>
+    <section class="cont">
+        <form id="capacityForm">
+            <label for="capacityInput">
+                <h1>Choose the capacity of the vehicle(1-5).</h1>
+                <input type="number" id="capacityInput" min="1" max="5">
+            </label>
+            <button id="capacityBtn" type="submit">Show Available Options</button>
+        </form>
+        <div class="rentals-summary">
+            <table class="capacity-preview-table">
+                <tr>
+                    <th>Capacity</th>
+                    <th>Rental Options</th>
+                </tr>
+                <tr>
+                    <td>1 person</td>
+                    <td>Small Scooter (single rider)</td>
+                </tr>
+                <tr>
+                    <td>2 people</td>
+                    <td>Medium Scooter, Tandem (1 driver/ 1 passenger)</td>
+                </tr>
+                <tr>
+                    <td>3 person</td>
+                    <td>Not available</td>
+                </tr>
+                <tr>
+                    <td>4 person</td>
+                    <td>Car (1 driver/ 3 passengers)</td>
+                </tr>
+                <tr>
+                    <td>5 person</td>
+                    <td>Car (1 driver/ 4 passengers)</td>
+                </tr>
+                </table>
+            </div>
+        </div>
+        <div class="button">
+            <button id="reserve" type="submit">Reserve Rent</button>
+        </div>
+    </section>
+    <section class="weather-container">
+        <h1>Weather Information for Cozumel</h1>
+        <hr>
+        <p><strong>Current Temperature:</strong> <span id="currentTemp"></span>°C</p>
+        <p><strong>Current Humidity:</strong> <span id="currentHumidity"></span>%</p>
+        <p><strong>Next Day's Temperature at 15:00 (3:00 PM):</strong> <span id="nextDayTemp"></span>°C</p>
+        <p><strong>Weather Condition:</strong> <span id="weatherMain"></span> (<span id="weatherDescription"></span>)</p>
+        <img src="" alt="Weather Icon" id="weatherIcon">
+       <!--,h2>Current Weather: <span id="temperature"></span></h2>
+            <p>Wind Speed: <span id="windSpeed"></span>mph,<span id="windP"></p>
+            <figure>
+                <img id="weather-icon" src="site" alt="weather icon">
+                <figcaption></figcaption>
+            </figure>
+            <br>--> 
+    </section>
+</div>
+<footer>
+    <div id="home-page-footer">
+        <p>Reach Best Motor Rentals in Mexico: 262-752-8891</p>
+        <p id="copyright">© <span id="currentyear">| Businesses | Mexico</span></p>
+    </div>
+    <div id="connect">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/socials/fb.png" alt="FB logo"
+            loading="lazy" title="Facebook.com"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/socials/insta.png"
+            alt="instagram logo" loading="lazy" title="Instagram.com"></a>
+    </div>
+</footer>
+<script src="scripts/capacityForm.js"></script>
+<script src="scripts/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+{
+ "rentals": 
+    [
+        {
+            "name": "Honda Metropolitan (49cc)",
+            "capacity": 1,
+            "reservation":
+            [
+                {
+                    "halfDayPrice": "$20",
+                    "fullDayPrice":"$30"
+                }
+
+            ],
+            "walkIn":
+            [
+                {
+                    "halfDayPrice": "$25",
+                    "fullDayPrice":"$35"
+
+                }
+            ]
+          },
+          {
+            "name": "Honda Dio (110cc)",
+            "capacity": 2,
+            "reservation":
+            [
+                {
+                    "halfDayPrice": "$30",
+                    "fullDayPrice":"$40"
+                }
+            ],
+            "walkIn":
+            [
+                {
+                    "halfDayPrice": "$35",
+                    "fullDayPrice":"$45"
+
+                }
+            ]
+          },
+          {
+            "name": "Honda PCX150 (149cc)",
+            "capacity": 2,
+            "reservation":
+            [
+                {
+                    "halfDayPrice": "$40",
+                    "fullDayPrice":"$50"
+                }
+            ],
+            "walkIn":
+            [
+                {
+                    "halfDayPrice": "$45",
+                    "fullDayPrice":"$55"
+                }
+            ]
+          },
+          {
+            "name": "Honda Pioneer 1000",
+            "capacity": 4,
+            "reservation":
+            [
+                {
+                    "halfDayPrice": "$50",
+                    "fullDayPrice":"$70"
+                }
+            ],
+            "walkIn":
+            [
+                {
+                    "halfDayPrice": "$60",
+                    "fullDayPrice":"$80"
+                }
+            ]
+
+          },
+          {
+            "name": "Jeep Wrangler - 4 door manual with A/C",
+            "capacity": 5,
+            "reservation":
+            [
+                {
+                    "halfDayPrice": "$70",
+                    "fullDayPrice":"$100"
+                }
+            ],
+            "walkIn":
+            [
+                {
+                    "halfDayPrice": "$85",
+                    "fullDayPrice":"$125"
+                }
+            ]
+          },
+          {
+            "name": "Jeep Wrangler - 2 door - open air - manual",
+            "capacity": 4,
+            "reservation":
+            [
+                {
+                    "halfDayPrice": "$60",
+                    "fullDayPrice":"$85"
+                }
+            ],
+            "walkIn":
+            [
+                {
+                    "halfDayPrice": "$70",
+                    "fullDayPrice":"$90"
+
+                }
+            ]
+          }
+    ]
+
+}

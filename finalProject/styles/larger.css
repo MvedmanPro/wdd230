@@ -1,0 +1,44 @@
+@media (min-width: 728px){
+    #main-nav{
+        display: flex;
+        margin: -60px 0 0 500px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #main-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .cont{
+        padding: 15px;
+        border: 2px solid var(--mainNavColor);
+        grid-row: 1/2;
+        grid-column: 2/3;
+        background-color: var(--mainTableColor);
+    }
+    .button{
+        max-width: 200px;
+        margin-top: 20px;
+        background-color: var(--mainNavColor);
+        margin: 20px auto;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #home-page-footer{
+        text-align: center;
+        margin: 2px;
+        padding: 5px;
+    }
+    #connect img{
+        align-items: center;
+    }
+    .weather-container{
+        margin: 10px 0px 20px 10px;
+        padding: 20px;
+    }
+    
+
+        
+}
