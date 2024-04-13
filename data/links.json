@@ -128,6 +128,15 @@
                 }
             ]
 
+        },
+        {
+            "lesson":"12",
+            "links":[
+                {
+                    "url":"finalProject/index.html",
+                    "title":"final Project"
+                }
+            ]
         }
     ]
 }
