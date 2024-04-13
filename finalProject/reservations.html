@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>- Scoots - Reserve your vehicle -</title>
+        <meta name="description" content="A reservations page on Scoots site - Built by Kateryna Glazkhova for a BYU-I WDD-230 Final Project.">
+        <meta property="og:title" content="'Scoots' Motor Rental Company - Reservations Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://mvedmanpro.github.io/wdd230/finalProject/images/home-gallery/main_blurred.webp">
+        <meta property="og:url" content="https://mvedmanpro.github.io/wdd230/finalProject/reservations.html">
+        <meta name="author" content="Kateryna Glazkhova">
+        <link rel="canonical" href="https://mvedmanpro.github.io/wdd230/finalProject/">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/base.css">
+        <link rel="stylesheet" type="text/css" href="styles/medium.css">
+        <link rel="stylesheet" type="text/css" href="styles/larger.css">
+        <link rel="icon" href="images/logo.webp" type="image/webp">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Palm tree (logo of the website)" class="logo" width="50">
+        <button id="hamButton" aria-label="Hamburger Navigation Menu"></button>
+            <nav id="mainNav">
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a class="active" href="#">Reservations</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+    </header>
+<main id="reservations-page">
+    <div id="list">
+        <h1>Please reserve your vehicle!</h1>
+        <h3>Rental Services and Agreements</h3>
+        <ul id="agreement">
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
+    </div>
+    <div id="reservations-container">
+        <form id="reservationForm" action="thankyou_reservations.html">
+            <div class="form-group">
+                <label for="name">*Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">*Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(xxx)xxx xxxx" required>
+            </div>
+            <div class="form-group">
+                <label for="email">*Email:</label>
+                <input type="email" id="email" name="email" placeholder="yourEmail@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="date">*Date:</label>
+                <input type="text" id="date" name="date" placeholder="mm/dd/yyyy" required>
+            </div>
+            <div class="form-group">
+                <label for="period">*Period:</label>
+                <input type="text" id="period" name="period" placeholder="half day/full day" required>
+            </div>
+            <div class="form-group">
+                <label for="cruise">Cruise Line(if applicable):</label>
+                <input type="text" id="cruise" name="cruise">
+            </div>
+            <div class="form-group">
+                <label for="rentalType">*Rental Type:</label>
+                <select id="rentalType" name="rentalType" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Honda Metropolitan (49cc)">Honda Metropolitan (49cc) - 1 person</option>
+                    <option value="Honda Dio (110cc)">Honda Dio (110cc) - 2 person</option>
+                    <option value="Honda PCX150 (149cc)">Honda PCX150 (149cc) - 2 person</option>
+                    <option value="Honda Pioneer 1000">Honda Pioneer 1000 - 4 person</option>
+                    <option value="Jeep Wrangler - 4 door manual with A/C">Jeep Wrangler - 4 door manual with A/C - 5 person</option>
+                    <option value="Jeep Wrangler - 2 door - open air - manual">Jeep Wrangler - 2 door - open air - manual - 4 person</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="homeState">*Home State or Country:</label>
+                <input type="text" id="homeState" name="homeState" placeholder="Your Country/State" required>
+            </div>
+            <div class="form-group">
+                <label for="specialAccommodations">Special:</label>
+                <textarea id="specialAccommodations" name="specialAccommodations" placeholder="Accommodations/Comments/Drop Off Requests"></textarea>
+            </div>
+            <input class="thanks" type="submit" value="Reserve">
+        </form>
+    </div>
+</main>
+<footer>
+    <div id="reservations-page-footer">
+        <p>Reach Best Motor Rentals in Mexico: 262-752-8891</p>
+        <p>| Businesses | Mexico</p>
+    </div>
+    <div id="connect">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/socials/fb.webp" alt="FB logo"
+            loading="lazy" title="Facebook.com"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/socials/insta.webp"
+            alt="instagram logo" loading="lazy" title="Instagram.com"></a>
+    </div>
+    <div class="author">
+        <a href="attributions.html" id="attrPage">Attributions Page</a>
+        <p>Site by Kateryna Glazkova for BYU-I WDD 230</p>
+    </div>
+</footer>
+<script src="scripts/hambmenu.js"></script>
+</body>
+</html>

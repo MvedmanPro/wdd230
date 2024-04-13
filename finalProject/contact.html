@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>- Scoots - Contact Us</title>
+        <meta name="description" content="A Contact Us page on Scoots site - Built by Kateryna Glazkhova
+        for BYU-I WDD230 Final project.">
+        <meta property="og:title" content="'Scoots' Motor Rental Company - Contact Us page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://mvedmanpro.github.io/wdd230/finalProject/images/home-gallery/main_blurred.webp">
+        <meta property="og:url" content="https://mvedmanpro.github.io/wdd230/finalProject/contact.html">
+        <meta name="author" content="Kateryna Glazkhova">
+        <link rel="canonical" href="https://mvedmanpro.github.io/wdd230/finalProject/">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/base.css">
+        <link rel="stylesheet" type="text/css" href="styles/medium.css">
+        <link rel="stylesheet" type="text/css" href="styles/larger.css">
+        <link rel="icon" href="images/logo.webp" type="image/webp">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Palm tree (logo of the website)" class="logo" width="50">
+        <button id="hamButton" aria-label="Hamburger Navigation Menu"></button>
+            <nav id="mainNav">
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a class="active" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+    </header>
+<main id="contact-page">
+    <div class="contact-container">
+        <div id="contact-info">
+            <h1>We serve our customers with pleasure!</h1>
+            <p>Feel free to send us your feedback/comment regarding our services, there is always a road to improvement,
+                but with your advice we run faster!</p>
+            <img src="images/home-gallery/sightview_750px_height.webp" alt="our staff" width="800">  
+            <hr>            
+            <p>Reach us: scoots_cozumel@gmail.com</p>
+            <hr>
+            <p>Phone number: 262-752-8891</p>
+            <hr>  
+            <p>See our Locations on maps below</p>
+            <hr> 
+        </div>
+        <div class="contact-form">
+            <h2>Leave us a message:</h2>
+            <form action="thankyou.html">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height: 170px;"></textarea>
+                <input id="contactBtn" type="submit" value="SUBMIT">
+            </form>
+        </div>
+            <div class="map-left">
+                <iframe title="Location number 1: Playa del Carmen-Cozumel Ferry Dock in El Centro de Cozumel" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59768.54240891594!2d-87.05392383022955!3d20.56624318413489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN!5e0!3m2!1sen!2sus!4v1712958011479!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map-right">
+                <iframe title="Location number 2: Terminal Puerta Maya (Further South Along the Coast)" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.723407812917!2d-86.97600862491034!3d20.476550481038217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2sus!4v1712958267270!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </div>
+</main>
+<footer>
+    <div id="contact-page-footer">
+        <p>Reach Best Motor Rentals in Mexico: 262-752-8891</p>
+        <p>| Businesses | Mexico</p>
+    </div>
+    <div id="connect">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/socials/fb.webp" alt="FB logo"
+            loading="lazy" title="Facebook.com"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/socials/insta.webp"
+            alt="instagram logo" loading="lazy" title="Instagram.com"></a>
+    </div>
+    <div class="author">
+        <a href="attributions.html" id="attrPage">Attributions Page</a>
+        <p>Site by Kateryna Glazkova for BYU-I WDD 230</p>
+    </div>
+</footer>
+<script src="scripts/hambmenu.js"></script>
+</body>
+
+</html>

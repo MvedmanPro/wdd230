@@ -1,97 +1,148 @@
-*
-{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
 :root{
     --mainNavColor: #FE8529;
-    --mainHoverColor: #84eeb0;
+    --mainHoverColor:  #9deeaf;
     --mainBlack: #1A1A1A;
     --mainHoverTextColor: white;
     --buttonsHoverColor: #fa0707cb;
     --accentColor: #9deeaf;
     --mainTableColor: #8db1fa;
+    --cardColor: #141ba6b2;
 }
 body{
     width: 100%;
     margin: 0 auto;
+    min-width: 400px;
+    max-width: 1500px;
     font-family: "Changa", sans-serif;
     font-weight: 400;
     font-size: larger;
     font-style: normal;
 }
-nav{
+/* Temp Banner */
+#tempBtn:hover {
+    font-weight: bold;
+}
+#tempBan {
+    display: none;
+    margin: .5rem auto;
+    border-radius: 10px;
+}
+#tempBan.open {
+    display: flex;
+    background-color: #8db1fa;
+    padding: .25rem;
+    text-align: end;
+}
+#tempBan p {
+    margin: 0 auto;
+    padding: .75rem;
+    align-self: baseline;
+    font-style: italic;
+}
+#tempBtn {
+    background-color: #fff700;
+    color: var(--mainBlack);
+    border: 2px solid black;
+    box-shadow: 2px 5px rgb(5, 5, 5);
+    margin-bottom: auto;
+}
+#tempBtn::before {
+    content: "x";
+    font-size: 1.5rem;
+    padding: 5px;
+}
+header{
     background-color: var(--mainNavColor);
-    height: 80px;
+    height: 220px;
+    margin: 0 auto;
 }
-nav ul li{
+.logo{
+    position: absolute;
+    background-color: #fff700;
+    border-radius: 20px;
+    margin: 20px; 
+}
+#hamButton{
+    display: block;
+    position: absolute;
+    background-color: #fff700;
+    color: var(--mainBlack);
+    border: 2px solid black;
+    box-shadow: 2px 5px rgb(5, 5, 5);
+    margin-top: 20px;
+    margin-left: 85%;
+    padding: 5px;
+}
+#hamButton::before{
+    content:"≡";
+}
+#mainNav #navigation{
     list-style: none;
+    padding-top: 80px;
+    padding-left: 10px;
 }
-#main-nav{
+#navigation li{
     display: none;
 }
-
-label{
-    margin: 10px;
-}
-label.logo{
-    font-size: 2.5rem;
-    padding: 0 auto;
-    background-color: #fff;
-}
-nav ul li a{
-    padding: 2rem;
-    border-radius: 1rem;
+#navigation a{
+    max-width: 150px;
+    justify-content: center;
     color: var(--mainBlack);
-    font-size: 1.5rem;
-    padding: 7px 13px;
-    text-transform: uppercase;
+    background-color:#f6eee3a3;
+    border: 2px solid black;
+    padding: 8px;
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
 }
-#main-nav li a.active, #main-nav li a:hover{
+#navigation a:hover {
+    background-color:var(--mainHoverColor);
+    border: 2px solid #F6EEE3;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding: 8px;
+}
+#navigation li a.active{
     text-decoration: underline;
+    border: 2px solid white;
     color: var(--mainBlack);
     background-color: var(--mainHoverColor);
     transition: .5s;
-    box-shadow: 2px 4px var(--mainBlack);
+    font-weight: 500;
+    box-shadow: 2px 4px white;
 }
-/*.button{
-    text-align: center;
-    justify-content: right;
-}*/
-#main-grid{
-    background-color: rgba(93, 115, 144, 0.605);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-
-
+#navigation.show li{
+    display: inline-block;
+    position: sticky;
+    font-size: smaller;
+    letter-spacing: 0px;
 }
-#reserve{
-    padding: 5px;
-    font-size: larger;
-    cursor: pointer;
-    width: 100%;
-    background-color: var(--mainNavColor);
-    color:var(--mainHoverTextColor);
-    text-shadow: 1px 2px #000000;
-    box-shadow: 1px 2px #000000;
-}
-#reserve:hover, #capacityBtn:hover{
-    box-shadow: 1px 2px #ffffff;
-    border: 2px solid var(--mainNavColor);
-    background-color: var(--buttonsHoverColor);
-    color: var(--mainBlack);
-    text-shadow: 1px 2px #f8f7f7;
+#hamButton.show::before{
+    content: "x";
 }
 /*styles for Home page image gallery slider*/
-.container{
+#main-grid{
+    background-color: #b6cfef9a;
+    padding: 20px;
+}
+.main-container{
     padding: 1rem;
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
+}
+.main-container h1, .weather-container h2{
+    text-align: center;
+    color: #3b73e5;
+    text-shadow: 1px 2px white;
+    background-color: #fff700;
+    margin: 12px;
+    border: 2px solid var(--mainNavColor);
+    border-radius: 5px;
 }
 .slider-wrapper{
     position: relative;
@@ -121,34 +172,64 @@ nav ul li a{
     z-index: 1;
 }
 .slider-nav a{
-    /*width: 0.5rem;
-    height: 0.5rem;*/
+    margin-top: -30px;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background-color: #fff;
     width: 10px;
     height: 10px;
-    /*opacity: 0.75;
+    opacity: 0.75;
     transition: opacity ease 250ms;
-    margin-bottom: 170px;*/
 }
 .slider-nav a:hover{
     opacity: 1;
 }
+/*home page reserve button*/
+#reserve {
+    margin: 10%
+}
 /*Styles for contact info/location home Page*/
 .locations{
-    margin: 8px;
+    margin: 20px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
     padding: 5px;
+    text-align: center;
     background-color: var(--mainHoverColor);
     box-shadow: 2px 4px var(--mainBlack);
 }
 /*rentals summary styles home page*/
+.cont{
+    background-color: var(--mainTableColor);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.cont h2{
+    margin: 20px;
+    padding: 3px;
+    font-weight: 100;
+}
+.cont h3{
+    margin: 5px;
+    max-width: 200px;
+    font-weight: 200;
+    font-style: italic;
+}
+.cont h2, .cont h3, .weather-container h2{
+    background-color: #fff700;
+    text-align: center;
+    border-radius: 5px;
+
+}
 .rentals-summary {
     margin-top: 20px;
     padding: 10px;
     border: 2px solid var(--mainBlack);
     background-color: var(--mainHoverColor);
 }
-label h1, #capacityBtn{
+#capacityBtn{
     background-color: #141ba6b2;
     color:#fff;
     text-shadow: 1px 2px black;
@@ -179,32 +260,232 @@ th, td {
     padding: 10px;
     text-align: left;
     background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
 }
-.weather-container{
-    background-color: var(--mainNavColor);
-    border: 4px solid var(--mainTableColor);
-    margin: 20px;
+tr:nth-child(even) {
+    background-color: #d57f7f; 
+}
+section .weather-container{
+    color: rgb(4, 4, 4);
+    text-shadow: 1px 1px #141ba6b2;
+    margin: 85px;
+    max-width: 600px;
     padding: 20px;
     text-align: center;
     line-height: 2rem;
-    box-shadow: 1rem 1rem 2rem -1rem var(--mainNavColor);
+    border-radius: 10px;
+    box-shadow: 1rem 1rem 2rem -1rem var(--mainBlack);
 }
-.weather-container h1{
-    color: rgb(110, 103, 103);
-    text-shadow: 1px 1px #141ba6b2;
+/*rentals page styles*/
+#rentals-page{
+    background-color: #F6EEE3;
+    margin: 0 auto;
+    overflow-x: auto;
 }
-/*footer home page*/
-#connect a:hover{
-
+#rentalPricingTable{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures consistent column widths */
 }
+  
+#rentalPricingTable th,
+#rentalPricingTable td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+  
+#rentalPricingTable th{
+    background-color: #f2f2f2;
+}
+#rentalPricingTable th:nth-child(4),
+#rentalPricingTable th:nth-child(6){
+    color: white;
+    background-color: #e30909d6;
+}
+#rentalPricingTable td:nth-child(odd){
+    background-color: #c5ebdc;
+}
+/* rentals image-gallery styles*/
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    grid-gap: 30px;
+}
+figure{
+    background-color: var(--mainHoverColor);
+    max-height: 800px;
+    padding: 15px;
+    height: 100%;
+    border: 2px dotted black;
+    border-radius: 3px;
+    text-align: center;
+}
+.image-gallery img{
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+/*footer*/
 footer{
     display: block;
     text-align: center;
-    background-color: var(--mainTableColor);
+    background-color: var(--mainNavColor);
     border-top: 3px solid var(--mainHoverColor);
+}
+.author a{
+    color: var(--mainBlack);
+    text-decoration: underline;
+}
+.author a:hover{
+    color: white;
+    text-decoration: underline;
 }
 #connect img{
     width: 50px;
     height: auto;
     align-items: center;
 }
+/*reservations page styles*/
+main#reservations-page{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--mainHoverColor);
+}
+#list{
+    max-width: 400px;
+    margin: 20px auto;
+}
+#reservations-page h1{
+    color: var(--mainBlack);
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 100;   
+}
+#reservations-page h3{
+    text-align: center;
+    padding: 5px;
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+#reservations-page ul{
+    padding: 40px;
+    margin-top: 20px;
+    background-color: #f7d2b6e1;
+    border: 2px solid white;
+}
+#reservations-container{
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#reserve, .thanks{
+    background-color: #fff700;
+    color: var(--mainBlack);
+    border: 2px solid black;
+    box-shadow: 2px 5px rgb(5, 5, 5);
+    font-size: larger;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#reserve:hover, .thanks:hover, #capacityBtn:hover{
+    background-color:#FE8529;
+}
+/*contact us*/
+.contact-container{
+    display: block;
+}
+#contact-page{
+    background-color: #8db1fa;
+    color: white;
+    text-shadow: 2px 1px #04AA6D;
+}
+#contact-page label{
+    background-color: #109d69;
+    margin: 5px;
+    width: 150px;
+    text-align: center;
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 6px;
+}
+#contact-page h2{
+    background-color: #3b73e5;
+    border-radius: 8px;
+    text-align: center;
+}
+.contact-container #contact-info, .contact-form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact-info img, iframe{
+    max-width: 100%;
+}
+#contact-info h1, #contact-info p, #contact-form{
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+    background-color: #3b74e59d;
+    border-radius: 7px;
+}
+.contact-form{
+    padding: 20px;
+    margin: 0 auto;
+}
+.map-left, .map-right{
+    margin: 0 auto;
+}
+
+/* Style inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ed8383;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#contactBtn {
+    background-color: #04AA6D;
+    color: white;
+    text-shadow: 2px 1px var(--mainBlack);
+    padding: 12px 20px;
+    border: none;
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+

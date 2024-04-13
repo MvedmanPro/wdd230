@@ -3,129 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Motor scooter rental company on the Island of Conzumel off the coast of 
-    Mexico in the western Caribbean Sea caters to locals, walk-in tourists, motor scooter enthusiasts, 
-    and cruise-based touring groups and partnerships.">
+    <title>Scoots - Best Motor Rentals in Cozumel, Mexico</title>
+    <meta name="description" content="Motor scooter rental company on the Island of Cozumel called Scoots - Built by Kateryna Glazkhova
+    for BYU-I WDD230 Final project.">
     <meta property="og:title" content="'Scoots' Motor Rental Company">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://mvedmanpro.github.io/wdd230">
+    <meta property="og:image" content="https://mvedmanpro.github.io/wdd230/finalProject/images/home-gallery/main_blurred.webp">
+    <meta property="og:url" content="https://mvedmanpro.github.io/wdd230/finalProject/">
     <meta name="author" content="Kateryna Glazkhova">
-    <link rel="canonical" href="https://mvedmanpro.github.io/wdd230/">
+    <link rel="canonical" href="https://mvedmanpro.github.io/wdd230/finalProject/">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <link rel="stylesheet" type="text/css" media="(min-width: 240px)" href="styles/medium.css">
-    <link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="styles/larger.css">
-    <link rel="icon" href="images/scooter-icon.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/logo.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
-    <title>Best Motor Rentals in Conzumel, Mexico</title>
 </head>
 <body>
+    <main>
+    <div id="tempBan">
+        <p>The highest temperature today is: <span id="high-temp"></span>&deg;C.</p>
+        <button id="tempBtn" class="material-symbols-outlined" aria-label="Close hi-temp. banner button."></button>
+    </div>
     <header>
-        <nav>
-            <label class="logo">🏝️</label>
-            <ul id="main-nav">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <img src="images/logo.webp" alt="Palm tree (logo of the website)" class="logo" width="50">
+        <button id="hamButton" aria-label="Hamburger Navigation Menu"></button>
+            <nav id="mainNav">
+                <ul id="navigation">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
     </header>
-<div id="main-grid">
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slide-1" src="images/scooters-view-1000px.webp" alt="Customers Enjoying a ride with the rented scooters at the beach of the Caribbean Sea">
-                <img id="slide-2" src="images/sign_edited.webp" alt="Welcome to Conzumel Island!">
-                <img id="slide-3" src="images/sightview_750px_height.webp" alt="Amazing view at the beach near Caribbean Sea">
+    <hr>
+    <div id="main-grid">
+        <section class="main-container">
+            <h1>Welcome to the Scoots Rental Company!</h1>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="images/home-gallery/main_blurred.webp" alt="Customers Enjoying a ride with the rented scooters at the beach of the Caribbean Sea" loading="lazy">
+                    <img id="slide-2" src="images/home-gallery/cozumel-rest.webp" alt="Amazing Restaurant at the beach" loading="lazy">
+                    <img id="slide-3" src="images/home-gallery/sight.webp" alt="Sight on Cozumel Island!" loading="lazy">
+                    <img id="slide-4" src="images/home-gallery/staff.webp" alt="satisfied cutomers" loading="lazy">
+                    <img id="slide-5" src="images/home-gallery/sand.webp" alt="view at the Beach of the Caribbean Sea, rocks and sand" loading="lazy">
+                    <img id="slide-6" src="images/home-gallery/sign_edited.webp" alt="Cozumel Sign" loading="lazy">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                </div>
             </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+            <div class="locations">
+                <p>Our Locations:</p>
+                <ul id="home-page-locations">
+                    <li>Near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</li>
+                    <li>Near the Terminal Puerta Maya further south along the coast which caters to the cruise lines and patrons</li>
+                </ul>
             </div>
-        <div class="locations">
-            <p>Our Locations:</p>
-            <ul id="home-page-locations">
-                <li>Near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</li>
-                <li>Near the Terminal Puerta Maya further south along the coast which caters to the cruise lines and patrons</li>
-            </ul>
-        </div>
-    </section>
-    <section class="cont">
-        <form id="capacityForm">
-            <label for="capacityInput">
-                <h1>Choose the capacity of the vehicle(1-5).</h1>
-                <input type="number" id="capacityInput" min="1" max="5">
-            </label>
-            <button id="capacityBtn" type="submit">Show Available Options</button>
-        </form>
-        <div class="rentals-summary">
-            <table class="capacity-preview-table">
+            <button id="reserve" type="submit">Reserve Rent</button>
+            <section class="weather-container">
+                <h2>Weather Information for Cozumel</h2>
+                <hr>
+                <p><strong>Current Temperature:</strong> <span id="currentTemp"></span>°C</p>
+                <p><strong>Current Humidity:</strong> <span id="currentHumidity"></span>%</p>
+                <p><strong>Next Day's Temperature at 15:00 (3:00 PM):</strong> <span id="nextDayTemp"></span>°C</p>
+                <p><strong>Weather Condition:</strong> <span id="weatherMain"></span> (<span id="weatherDescription"></span>)</p>
+                <img src="site" alt="Weather Icon" id="weatherIcon">
+            </section>
+        </section>
+        <section class="cont">
+            <h2>What types of rentals do we have?</h2>
+                <h3>See below:</h3>
+            <table id="rentalTypes">
                 <tr>
-                    <th>Capacity</th>
-                    <th>Rental Options</th>
+                    <th>Type of Rental</th>
+                    <th>Model</th>
                 </tr>
                 <tr>
-                    <td>1 person</td>
-                    <td>Small Scooter (single rider)</td>
+                    <td>Honda Motor Scooters</td>
+                    <td>Honda Metropolitan (49cc)</td>
                 </tr>
                 <tr>
-                    <td>2 people</td>
-                    <td>Medium Scooter, Tandem (1 driver/ 1 passenger)</td>
+                    <td></td>
+                    <td>Honda Dio (110cc)</td>
                 </tr>
                 <tr>
-                    <td>3 person</td>
-                    <td>Not available</td>
+                    <td></td>
+                    <td>Honda PCX150 (149cc)</td>
                 </tr>
                 <tr>
-                    <td>4 person</td>
-                    <td>Car (1 driver/ 3 passengers)</td>
+                    <td>Side-by-Side ATVs</td>
+                    <td>Honda Pioneer 1000</td>
                 </tr>
                 <tr>
-                    <td>5 person</td>
-                    <td>Car (1 driver/ 4 passengers)</td>
+                    <td>Jeeps</td>
+                    <td>Jeep Wrangler - 4 door manual with A/C</td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td>Jeep Wrangler - 2 door, open-air, manual</td>
+                </tr>
+                    </table>
+            <form id="capacityForm">
+                <h2>Choose the capacity of the vehicle(1-5).</h2>
+                <label for="capacityInput">
+                    <input type="number" id="capacityInput" min="1" max="5">
+                </label>
+                <button id="capacityBtn" type="submit">Show Available Options</button>
+            </form>
+            <div class="rentals-summary">
+                <table class="capacity-preview-table">
+                    <tr>
+                        <th>Capacity</th>
+                        <th>Rental Options</th>
+                    </tr>
+                    <tr>
+                        <td>1 person</td>
+                        <td>Small Scooter (single rider)</td>
+                    </tr>
+                    <tr>
+                        <td>2 people</td>
+                        <td>Medium Scooter, Tandem (1 driver/ 1 passenger)</td>
+                    </tr>
+                    <tr>
+                        <td>3 person</td>
+                        <td>Not available</td>
+                    </tr>
+                    <tr>
+                        <td>4 person</td>
+                        <td>Car (1 driver/ 3 passengers)</td>
+                    </tr>
+                    <tr>
+                        <td>5 person</td>
+                        <td>Car (1 driver/ 4 passengers)</td>
+                    </tr>
                 </table>
             </div>
-        </div>
-        <div class="button">
-            <button id="reserve" type="submit">Reserve Rent</button>
-        </div>
-    </section>
-    <section class="weather-container">
-        <h1>Weather Information for Cozumel</h1>
-        <hr>
-        <p><strong>Current Temperature:</strong> <span id="currentTemp"></span>°C</p>
-        <p><strong>Current Humidity:</strong> <span id="currentHumidity"></span>%</p>
-        <p><strong>Next Day's Temperature at 15:00 (3:00 PM):</strong> <span id="nextDayTemp"></span>°C</p>
-        <p><strong>Weather Condition:</strong> <span id="weatherMain"></span> (<span id="weatherDescription"></span>)</p>
-        <img src="" alt="Weather Icon" id="weatherIcon">
-       <!--,h2>Current Weather: <span id="temperature"></span></h2>
-            <p>Wind Speed: <span id="windSpeed"></span>mph,<span id="windP"></p>
-            <figure>
-                <img id="weather-icon" src="site" alt="weather icon">
-                <figcaption></figcaption>
-            </figure>
-            <br>--> 
-    </section>
-</div>
+        </section>
+    </div>
+</main>
 <footer>
     <div id="home-page-footer">
         <p>Reach Best Motor Rentals in Mexico: 262-752-8891</p>
-        <p id="copyright">© <span id="currentyear">| Businesses | Mexico</span></p>
+        <p>| Businesses | Mexico</p>
     </div>
     <div id="connect">
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/socials/fb.png" alt="FB logo"
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/socials/fb.webp" alt="FB logo"
             loading="lazy" title="Facebook.com"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/socials/insta.png"
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/socials/insta.webp"
             alt="instagram logo" loading="lazy" title="Instagram.com"></a>
     </div>
+    <div class="author">
+        <a href="attributions.html" id="attrPage">Attributions Page</a>
+        <p>Site by Kateryna Glazkova for BYU-I WDD 230</p>
+    </div>
 </footer>
+<script src="scripts/tempBanner.js"></script>
+<script src="scripts/reservebutton.js"></script>
 <script src="scripts/capacityForm.js"></script>
 <script src="scripts/weather.js"></script>
+<script src="scripts/hambmenu.js"></script>
 </body>
 </html>

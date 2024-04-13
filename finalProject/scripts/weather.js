@@ -17,6 +17,8 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
+    // Display highest temp/banner
+    document.getElementById("high-temp").textContent = weatherData.list[0].main.temp_max.toFixed(1);
     // Display current temperature
     document.getElementById("currentTemp").textContent = weatherData.list[0].main.temp.toFixed(1);
 
